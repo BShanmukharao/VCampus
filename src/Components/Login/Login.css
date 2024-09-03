@@ -1,0 +1,137 @@
+@import url('../../font-families/font-families.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-family: "Inter", sans-serif;
+}
+
+.Login-bg-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-bg-container {
+    background-color: #3b4655;
+    padding:20px;
+    border-radius: 5px;
+    width:350px;
+}
+
+.login-to-Ac-para {
+   text-align:center;
+   font-weight:bold;
+   font-size:20px;
+   color:white;
+}
+
+.input-container {
+   display:flex;
+   align-items:center;
+}
+
+.eachIcon {
+    border-style:solid;
+    border-width:1px;
+    border-color:rgb(243, 238, 238);
+    padding-top:13px;
+    padding-bottom:13px;
+    min-width:40px;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    border-left:none;
+    cursor:pointer;
+    color:white;
+}
+
+.each-input-filed {
+    background-color:transparent;
+    border-style:solid;
+    border-width:1px;
+    border-color:rgb(243, 238, 238);
+    outline:none;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    padding-left:15px;
+    padding-top:9px;
+    padding-bottom:9px;
+    width:100%;
+    color:white;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.forgot-login-container {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.forgot-password-label {
+    font-size:14px;
+    cursor:pointer;
+    color:white;
+}
+
+.login-button {
+    border-style:solid;
+    border-width:0px;
+    background-color:rgb(114, 245, 217);
+    font-size:13px;
+    font-weight:bold;
+    color:black;
+    padding:7px 17px 7px 17px;
+    border-radius:3px;
+}
+
+.create-an-account-button {
+    border-style:solid;
+    border-width:0px;
+    background-color:rgb(114, 245, 217);
+    font-size:13px;
+    font-weight:bold;
+    color:black;
+    padding:7px 17px 7px 17px;
+    border-radius:3px;
+}
+
+@media (max-width:412px) {
+    .form-bg-container{
+        width:90%;
+    }
+
+    .login-to-Ac-para {
+        font-size:14px;
+     }
+
+     .each-input-filed {
+        font-size:12px;
+    }
+
+    .eachIcon {
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+
+    .forgot-password-label {
+        font-size:12px;
+    }
+
+    .login-button {
+        font-size:11px;
+        padding:7px 17px 7px 17px;
+    }
+    
+    .create-an-account-button {
+        font-size:11px;
+        padding:7px 17px 7px 17px;
+    }
+}

@@ -1,0 +1,14 @@
+.counter-bg-container {
+    display: flex;
+}
+
+.header-content-bg-container {
+    width: 100%;
+}
+
+.each-content-container {
+    max-height: 90vh;
+    min-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+}
