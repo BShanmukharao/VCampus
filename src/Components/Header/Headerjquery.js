@@ -1,7 +1,8 @@
 import $ from 'jquery';
 
-$(function () {
 
+$(function () {
+  
   const getAboveArrowId = document.getElementById('header-above-arrow-icon');
 
   $(getAboveArrowId).on("click", function (e) {

@@ -1,5 +1,19 @@
 import $ from 'jquery';
 
+const closefunction = function () {
+
+  $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+
+
+  $('.menu > ul > li > a > .arrow').not($(this).find('.arrow')).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+
+
+  $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
+
+
+  $(".menu ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
+}
+
 //first-nested-menu
 
 
@@ -142,4 +156,19 @@ $(function () {
 
 })
 
+$(function () {
+  var windowsize = $(window).width();
 
+  if (windowsize <= 992) {
+    const sidebarId = $('#SideBar-Id');
+    $(function () {
+      $('.menu > ul > li').on("click", function (e) {
+        e.preventDefault()
+        if (!$(e.target).next().length) {
+          $(sidebarId).removeClass("addBelowStylesClass");
+          closefunction()
+        }
+      });
+    })
+  }
+})

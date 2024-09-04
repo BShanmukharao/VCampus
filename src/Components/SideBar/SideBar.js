@@ -12,13 +12,9 @@ export const SideBar = () => {
 
   const dispatch = useDispatch()
 
-  const check = () => {
-    console.log("hii");
-  }
-
   return (
     <div className='bg-container' id='SideBar-Id'>
-      <div className='sidebar'>
+      <div className='sidebar' id="side-id">
         <div className='head'>
           <div>
             <Link to="/home" className='logout-router-link'>
@@ -56,6 +52,9 @@ export const SideBar = () => {
                         <ul className='third-nested-menu'>
                           <li>
                               <span className='text'> <Link to={"/home/a"} >Application / Registration Fee</Link></span>
+                          </li>
+                          <li>
+                              <Link to={"/home/a"} >Application / Registration Fee</Link>
                           </li>
                           <li>
                             <a href='/b'>

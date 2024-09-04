@@ -245,7 +245,7 @@ function BooksFeeofNewStudent() {
                             <input type='text' className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Concess name is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
                         </div>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
-                            <label className='input-label'>CREDITED ?</label><br />
+                            <label className='input-label'>CREDITED ?</label>
                             <input type='checkbox' className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Date of birth is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
                         </div>
                     </div>

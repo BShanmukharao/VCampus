@@ -170,6 +170,7 @@ ul {
     z-index: 1000;
 }
 
+
 @media (max-width:992px) {
     .bg-container {
         position: fixed;
