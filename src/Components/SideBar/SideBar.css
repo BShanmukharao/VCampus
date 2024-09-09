@@ -73,9 +73,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    font-size: 14px;
     font-weight: 500;
-    color: #757575;
     color: white;
     text-decoration: none;
     padding: 12px 8px;
@@ -83,10 +81,15 @@ ul {
     transition: all 0.3s;
 }
 
+.menu ul li .each-link:hover,
+.menu ul li.active>.each-link {
+    color: #000000;
+    background-color: rgb(189, 172, 238);
+}
+
 .menu ul li>a:hover,
 .menu ul li.active>a {
     color: #000000;
-    background-color: #f6f6f6;
     background-color: rgb(189, 172, 238);
 }
 
@@ -162,8 +165,8 @@ ul {
 }
 
 .addBelowStylesClass {
-    position:fixed !important;
-    width: 270px;
+    position:fixed !important;  
+    max-width:270px;
     height: 100vh;
     left: 0px !important;
     transition: left 0.9s ease;
@@ -179,12 +182,8 @@ ul {
         z-index: 1000;
     }
 
-    .user-details .title {
-        font-size: 13px;
-        font-weight: bold;
-        color: black;
-        color: #ffffff;
-        text-transform: uppercase;
+    .sidebar {
+        width: 250px;
     }
 
     .close-sidebar-arrow {
@@ -194,17 +193,13 @@ ul {
     }
 
     .menu ul li .icon {
-        font-size: 16px;
+        font-size: 15px;
         min-width: 32px;
     }
 
-    .text {
-        font-size: 12px;
-    }
-
     .sidebar-logo {
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
         border-radius: 50%;
     }
 
@@ -215,15 +210,23 @@ ul {
         text-transform: uppercase;
         margin-bottom: 0px;
     }
+
+    .text {
+        font-size:11px;
+    }
+
+    .each-link {
+        font-size:11px;
+    }
 }
 
 @media (min-width:993px) and (max-width:1300px) {
     .sidebar {
-        width: 270px;
+        width: 250px;
     }
 
     .user-details .title {
-        font-size: 13px;
+        font-size: 12px;
         font-weight: bold;
         color: black;
         color: #ffffff;
@@ -231,8 +234,8 @@ ul {
     }
 
     .sidebar-logo {
-        height: 35px;
-        width: 35px;
+        height: 30px;
+        width: 30px;
         border-radius: 50%;
     }
 
@@ -242,13 +245,17 @@ ul {
     }
 
     .text {
-        font-size: 13px;
+        font-size:10px;
+    }
+
+    .each-link {
+        font-size: 10px;
     }
 }
 
 @media (min-width:1301px) {
     .sidebar {
-        width: 310px;
+        width: 270px;
     }
 
     .user-details .title {
@@ -260,12 +267,22 @@ ul {
     }
 
     .menu ul li .icon {
-        font-size: 18px;
+        font-size: 15px;
         min-width: 32px;
     }
 
     .text {
-        font-size: 14px;
+        font-size:12px;
+    }
+
+    .each-link {
+        font-size: 12px;
+    }
+
+    .sidebar-logo {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
     }
 }
 

@@ -51,20 +51,10 @@ export const SideBar = () => {
                         </Link>
                         <ul className='third-nested-menu'>
                           <li>
-                              <span className='text'> <Link to={"/home/a"} >Application / Registration Fee</Link></span>
+                             <span className='text'><Link to={"/home/a"} className='each-link'>Application / Registration Fee</Link></span>
                           </li>
                           <li>
-                              <Link to={"/home/a"} >Application / Registration Fee</Link>
-                          </li>
-                          <li>
-                            <a href='/b'>
-                              <span className='text'>Application / Registration Fee</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <span className='text'>New Students Monthly / Term Fee</span>
-                            </a>
+                              <span className='text'><Link to={"/home/b"} className='each-link'>New Students Monthly / Term Fee</Link></span>
                           </li>
                           <li>
                             <a href='#'>
