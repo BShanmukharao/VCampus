@@ -1,7 +1,7 @@
 import React, { /*useState*/ } from 'react';
 import { useEffect, useMemo } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './BooksFeeofNewStudent.css'
+import './BooksFeeofNewStudents.css'
 import {
     MaterialReactTable,
     useMaterialReactTable,
@@ -60,7 +60,6 @@ function BooksFeeofNewStudent() {
 
     const getFormData = (e) => {
         e.preventDefault()
-        console.log("properly")
     }
 
     /*const showdata = () => {

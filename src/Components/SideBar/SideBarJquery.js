@@ -128,7 +128,7 @@ $(function () {
 
 })
 
-$(function () {
+/*$(function () {
   var windowsize = $(window).width();
   const sidebarId = $('#SideBar-Id');
 
@@ -140,9 +140,9 @@ $(function () {
       } else {
         console.log("This element does not have any siblings.");
       }
-      /*if (!$(e.target).next().length) {
+      if (!$(e.target).next().length) {
         $(sidebarId).removeClass("addBelowStylesClass");
-      }*/
+      }
     });
   })
-})
+})*/

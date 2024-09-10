@@ -6,11 +6,13 @@ import './Home.css'
 import './Homejquery'
 
 import ApplicationRegistrationFee from '../StudentManagement/DataEntry/NewAdmissions/ApplicationRegistrationFee/ApplicationRegistrationFee'
-import BooksFeeofNewStudent from '../StudentManagement/DataEntry/NewAdmissions/BooksFeeofNewStudent/BooksFeeofNewStudent'
+import BooksFeeofNewStudents from '../StudentManagement/DataEntry/NewAdmissions/BooksFeeofNewStudents/BooksFeeofNewStudents'
+import { AllotmentOfAdmnNos } from '../StudentManagement/DataEntry/NewAdmissions/AllotmentOfAdmnNos/AllotmentOfAdmnNos'
 
 const routes = [
-    { path: '/', component: ApplicationRegistrationFee },
-    { path: '/a', component: BooksFeeofNewStudent}  
+    { path: '/', component: BooksFeeofNewStudents},
+    { path: '/ApplicationRegistrationFee', component: ApplicationRegistrationFee },
+    { path: '/AllotmentOfAdmnNos', component: AllotmentOfAdmnNos },
 ];
 
 export const Home = () => {

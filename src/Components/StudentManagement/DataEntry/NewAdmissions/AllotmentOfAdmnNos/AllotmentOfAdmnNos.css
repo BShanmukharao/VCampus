@@ -1,0 +1,68 @@
+.allotment-admn-form-bg-container {
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+    border-radius: 4px;
+}
+
+.allotment-admn-main-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #3b4655;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-width: 4px;
+    border-color: rgba(250, 228, 34, 0.884);
+}
+
+.allotment-span {
+    font-weight: 700;
+    font-size: 12px;
+    color: rgb(7, 112, 112);
+}
+
+.allotment-paragraph {
+    font-size: 12px;
+    color: rgb(7, 70, 112);
+    font-weight: 500;
+}
+
+.allotment-input {
+    max-width: 100px;
+    margin-left: 5px;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+.allotment-buttons {
+    min-width: 90px;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 14px;
+}
+
+.allotment-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width:447px) {
+    .allotment-buttons-container {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .allotment-buttons {
+        min-width: 72px;
+        margin-top:5px;
+        font-size:9px;
+    }
+}
+

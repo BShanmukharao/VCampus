@@ -51,10 +51,10 @@ export const SideBar = () => {
                         </Link>
                         <ul className='third-nested-menu'>
                           <li>
-                             <span className='text'><Link to={"/home/a"} className='each-link'>Application / Registration Fee</Link></span>
+                            <span className='text'><Link to={"/home/ApplicationRegistrationFee"} className='each-link'>Application / Registration Fee</Link></span>
                           </li>
                           <li>
-                              <span className='text'><Link to={"/home/b"} className='each-link'>New Students Monthly / Term Fee</Link></span>
+                            <span className='text'><Link to={""} className='each-link'>New Students Monthly / Term Fee</Link></span>
                           </li>
                           <li>
                             <a href='#'>
@@ -100,9 +100,7 @@ export const SideBar = () => {
                             </a>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Allotment of Admn.Nos</span>
-                            </a>
+                            <span className='text'><Link to={"/home/AllotmentOfAdmnNos"} className='each-link'>Allotment of Admn.Nos</Link></span>
                           </li>
                           <li>
                             <a href='#'>
