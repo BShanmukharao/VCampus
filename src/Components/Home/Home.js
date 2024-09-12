@@ -7,12 +7,14 @@ import './Homejquery'
 
 import ApplicationRegistrationFee from '../StudentManagement/DataEntry/NewAdmissions/ApplicationRegistrationFee/ApplicationRegistrationFee'
 import BooksFeeofNewStudents from '../StudentManagement/DataEntry/NewAdmissions/BooksFeeofNewStudents/BooksFeeofNewStudents'
-import { AllotmentOfAdmnNos } from '../StudentManagement/DataEntry/NewAdmissions/AllotmentOfAdmnNos/AllotmentOfAdmnNos'
+import AllotmentOfAdmnNos from '../StudentManagement/DataEntry/NewAdmissions/AllotmentOfAdmnNos/AllotmentOfAdmnNos'
+import DefineBusStopsOfNewStudents from '../StudentManagement/DataEntry/NewAdmissions/NewStudentsTransportation/DefineBusStopsOfNewStudents/DefineBusStopsOfNewStudents'
 
 const routes = [
     { path: '/', component: BooksFeeofNewStudents},
     { path: '/ApplicationRegistrationFee', component: ApplicationRegistrationFee },
     { path: '/AllotmentOfAdmnNos', component: AllotmentOfAdmnNos },
+    { path: '/DefineBusStopsOfNewStudents', component: DefineBusStopsOfNewStudents}
 ];
 
 export const Home = () => {

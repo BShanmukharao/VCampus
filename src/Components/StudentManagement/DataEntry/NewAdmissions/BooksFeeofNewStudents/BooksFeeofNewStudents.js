@@ -164,9 +164,9 @@ function BooksFeeofNewStudent() {
 
 
     return (
-        <div className='application-registration-bg-container'>
-            <form className='application-registration-form-bg-container' onSubmit={getFormData}>
-                <h1 className='application-registration-main-heading mb-0'>BOOKS FEE OF NEW STUDENT</h1>
+        <div className='books-fee-of-new-students-bg-container'>
+            <form className='books-fee-of-new-students-form-bg-container' onSubmit={getFormData}>
+                <h1 className='books-fee-of-new-students-main-heading mb-0'>BOOKS FEE OF NEW STUDENT</h1>
                 <div className='container-fluid container-with-button pt-2'>
                     <div className='row'>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
@@ -248,13 +248,13 @@ function BooksFeeofNewStudent() {
                             <input type='checkbox' className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Date of birth is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
                         </div>
                     </div>
-                    <div className='buttons-container pt-4 pb-4'>
-                        <button className='buttons btn btn-primary' type='button'>BACK</button>
-                        <button className='buttons btn btn-success' type='submit'>SUBMIT</button>
+                    <div className='books-fee-of-new-students-buttons-container pt-4 pb-4'>
+                        <button className='books-fee-of-new-students-buttons btn btn-primary' type='button'>BACK</button>
+                        <button className='books-fee-of-new-students-buttons btn btn-success' type='submit'>SUBMIT</button>
                     </div>
                 </div>
             </form>
-            <div className='application-registration-table-bg-container mt-4'>
+            <div className='books-fee-of-new-students-table-bg-container mt-4'>
                 <h1 className='application-registration-main-heading mb-0'>BOOKS FEE OF NEW STUDENT</h1>
                 <MaterialReactTable table={table} />
             </div>

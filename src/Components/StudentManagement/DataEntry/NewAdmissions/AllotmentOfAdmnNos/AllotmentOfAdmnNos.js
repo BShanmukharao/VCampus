@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AllotmentOfAdmnNos.css'
 
-export const AllotmentOfAdmnNos = () => {
+function AllotmentOfAdmnNos () {
     return (
         <div className='allotment-admn-form-bg-container'>
             <h1 className='allotment-admn-main-heading mb-0'>NEW ADMIN. NO.9</h1>
@@ -38,3 +38,5 @@ export const AllotmentOfAdmnNos = () => {
         </div>
     )
 }
+
+export default AllotmentOfAdmnNos;

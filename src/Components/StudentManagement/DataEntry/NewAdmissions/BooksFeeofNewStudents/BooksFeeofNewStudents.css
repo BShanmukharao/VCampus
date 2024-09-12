@@ -1,15 +1,19 @@
-.application-registration-form-bg-container {
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
-    border-radius:4px;
+.books-fee-of-new-students-bg-container-bg-container {
+    
 }
 
-.application-registration-table-bg-container {
+.books-fee-of-new-students-table-bg-container {
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
     border-radius:4px;
     overflow-y:auto;
 }
 
-.application-registration-main-heading {
+.books-fee-of-new-students-form-bg-container {
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+    border-radius:4px;
+}
+
+.books-fee-of-new-students-main-heading {
     font-size:14px;
     font-weight:bold;
     color:#ffffff;
@@ -61,7 +65,7 @@
     overflow-y:auto;
 }
 
-.buttons {
+.books-fee-of-new-students-buttons {
     min-width:80px;
     font-weight:bold;
     font-size:12px;
@@ -70,7 +74,7 @@
     margin-left:14px;
 }
 
-.buttons-container {
+.books-fee-of-new-students-buttons-container {
     display:flex;
     justify-content:flex-end;
 }
