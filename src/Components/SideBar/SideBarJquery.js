@@ -133,16 +133,10 @@ $(function () {
   const sidebarId = $('#SideBar-Id');
 
   $(function () {
-    $('.menu > ul > li').on("click", function (e) {
-      e.preventDefault()
-      if ($('.menu > ul > li').siblings().length > 0) {
-        console.log("This element has siblings.");
-      } else {
-        console.log("This element does not have any siblings.");
-      }
-      if (!$(e.target).next().length) {
-        $(sidebarId).removeClass("addBelowStylesClass");
-      }
+    $(this).on("click",function (e){
+      var rootElement = $(this).closest('#SideBar-Id');
+      console.log(rootElement);
+    })
     });
-  })
 })*/
+

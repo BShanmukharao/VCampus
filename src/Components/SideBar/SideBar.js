@@ -8,6 +8,13 @@ import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassSta
 
 
 
+
+const aboveArrowId = document.getElementById("Header-Above-Arrow-Id");
+const belowArrowId = document.getElementById('Header-Below-Arrow-Id');
+const closeSideBarId = document.getElementById("close-sidebar-id");
+const sidebarId = document.getElementById('SideBar-Id');
+
+
 export const SideBar = () => {
 
   const dispatch = useDispatch()
@@ -77,16 +84,16 @@ export const SideBar = () => {
                             </a>
                           </li>
                           <li>
-                            <a href='#'>
+                            <Link to={""}>
                               <span className='text'>New Students Transaction</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                            </a>
+                            </Link>
                             <ul className='forth-nested-menu'>
                               <li>
                                 <span className='text'><Link to={"/home/DefineBusStopsOfNewStudents"} className='each-link'>Define Vehicles for New Students</Link></span>
                               </li>
                               <li>
-                                <span className='text'><Link to={"/home"} className='each-link'>Define Bus Stops of New Students</Link></span>
+                                <span className='text'><Link to={"/home/DefineVehiclesForNewStudents"} className='each-link'>Define Bus Stops of New Students</Link></span>
                               </li>
                             </ul>
                           </li>
@@ -109,9 +116,7 @@ export const SideBar = () => {
                             </a>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Books Fee of New Students</span>
-                            </a>
+                            <span className='text'><Link to={"/home/BooksFeeofNewStudents"} className='each-link'>Books Fee of New Students</Link></span>
                           </li>
                         </ul>
                       </li>

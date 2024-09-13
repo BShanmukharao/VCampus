@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
 import { toggleValue } from '../Redux/ToggleSideBarSlice';
@@ -6,8 +7,6 @@ import { faBell, faPowerOff, faCircleArrowLeft, faBars } from '@fortawesome/free
 
 import './Headerjquery'
 import './Header.css'
-
-
 
 export const Header = () => {
 

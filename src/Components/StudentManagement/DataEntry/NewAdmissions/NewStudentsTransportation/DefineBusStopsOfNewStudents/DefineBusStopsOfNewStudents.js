@@ -9,14 +9,14 @@ function DefineBusStopsOfNewStudents() {
                 <div className='row'>
                     <div className='col-xs-12 define-bus-stops-of-new-students-table-container mb-3'>
                         <table className="define-bus-stops-of-new-students-table">
-                            <tr className="define-bus-stops-of-new-students-table-heading">
+                            <tr>
                                 <th>CODE</th>
                                 <th>VEHICLE TYPE</th>
                                 <th>VEHICLE NO</th>
                                 <th>DRIVER NAME</th>
                                 <th>MOBILE NO</th>
                             </tr>
-                            <tr className="define-bus-stops-of-new-students-table-each-row">
+                            <tr>
                                 <td>1</td>
                                 <td>ROUTE NO 1</td>
                                 <td>TS08UF2268</td>

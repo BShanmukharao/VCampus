@@ -6,6 +6,7 @@
     align-items:center;
     justify-content:space-between;
     padding:30px 20px 30px 20px;
+    height:9vh;
 }
 .header-bg-container .hamburger-menu {
     font-size:22px;

@@ -167,7 +167,7 @@ function BooksFeeofNewStudent() {
         <div className='books-fee-of-new-students-bg-container'>
             <form className='books-fee-of-new-students-form-bg-container' onSubmit={getFormData}>
                 <h1 className='books-fee-of-new-students-main-heading mb-0'>BOOKS FEE OF NEW STUDENT</h1>
-                <div className='container-fluid container-with-button pt-2'>
+                <div className='container-fluid pt-2'>
                     <div className='row'>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
                             <label className='input-label'>TODAY DATE</label><br />

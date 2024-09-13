@@ -5,16 +5,20 @@ import { Header } from '../Header/Header'
 import './Home.css'
 import './Homejquery'
 
+import HomeScreen from '../StudentManagement/DataEntry/NewAdmissions/HomeScreen/HomeScreen'
 import ApplicationRegistrationFee from '../StudentManagement/DataEntry/NewAdmissions/ApplicationRegistrationFee/ApplicationRegistrationFee'
 import BooksFeeofNewStudents from '../StudentManagement/DataEntry/NewAdmissions/BooksFeeofNewStudents/BooksFeeofNewStudents'
 import AllotmentOfAdmnNos from '../StudentManagement/DataEntry/NewAdmissions/AllotmentOfAdmnNos/AllotmentOfAdmnNos'
 import DefineBusStopsOfNewStudents from '../StudentManagement/DataEntry/NewAdmissions/NewStudentsTransportation/DefineBusStopsOfNewStudents/DefineBusStopsOfNewStudents'
+import DefineVehiclesForNewStudents from '../StudentManagement/DataEntry/NewAdmissions/NewStudentsTransportation/DefineVehiclesForNewStudents/DefineVehiclesForNewStudents';
 
 const routes = [
-    { path: '/', component: BooksFeeofNewStudents},
+    { path: '/', component: HomeScreen},
     { path: '/ApplicationRegistrationFee', component: ApplicationRegistrationFee },
+    { path: '/DefineBusStopsOfNewStudents', component: DefineBusStopsOfNewStudents},
     { path: '/AllotmentOfAdmnNos', component: AllotmentOfAdmnNos },
-    { path: '/DefineBusStopsOfNewStudents', component: DefineBusStopsOfNewStudents}
+    { path: '/BooksFeeofNewStudents', component: BooksFeeofNewStudents},
+    { path: '/DefineVehiclesForNewStudents', component: DefineVehiclesForNewStudents}
 ];
 
 export const Home = () => {

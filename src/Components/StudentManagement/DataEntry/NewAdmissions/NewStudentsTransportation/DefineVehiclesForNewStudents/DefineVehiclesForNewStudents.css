@@ -1,0 +1,87 @@
+.define-vehicles-for-new-students-bg-container {
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+    border-radius: 4px;
+}
+
+.define-vehicles-for-new-students-main-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #3b4655;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-width: 4px;
+    border-color: rgba(250, 228, 34, 0.884);
+}
+
+.define-vehicles-for-new-students-table-container {
+    overflow: auto;
+}
+
+.define-vehicles-for-new-students-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.define-vehicles-for-new-students-buttons {
+    min-width: 60px;
+    font-weight: bold;
+    font-size: 9px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 14px;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size:12px;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size:12px;
+}
+
+.define-vehicles-for-new-students-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+@media (max-width:1016px) {
+    .define-vehicles-for-new-students-buttons-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .define-vehicles-for-new-students-buttons {
+        min-width: 72px;
+        margin-top: 5px;
+        font-size: 9px;
+    }
+    
+    th {
+        font-size: 10px;
+    }
+
+    td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        font-size: 10px;
+    }
+}
