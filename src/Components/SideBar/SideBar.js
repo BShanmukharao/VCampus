@@ -7,14 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassStart, faCommentDots, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 
-
-
-const aboveArrowId = document.getElementById("Header-Above-Arrow-Id");
-const belowArrowId = document.getElementById('Header-Below-Arrow-Id');
-const closeSideBarId = document.getElementById("close-sidebar-id");
-const sidebarId = document.getElementById('SideBar-Id');
-
-
 export const SideBar = () => {
 
   const dispatch = useDispatch()
@@ -165,29 +157,19 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Create Marks Data</span>
-                            </a>
+                            <span className='text'><Link to={"/home/CreateMarksData"} className='each-link'>Create Marks Data</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Enter / Edit Marks</span>
-                            </a>
+                            <span className='text'><Link to={"/home/EnterOrEditMarks"} className='each-link'>Enter / Edit Marks</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Delete Marks Data</span>
-                            </a>
+                            <span className='text'><Link to={"/home/DeleteMarksData"} className='each-link'>Delete Marks Data</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Recreate Marks Data</span>
-                            </a>
+                            <span className='text'><Link to={"/home/RecreateMarksData"} className='each-link'>Recreate Marks Data</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Back-Up Marks Data</span>
-                            </a>
+                            <span className='text'><Link to={"/home/BackUpMarksData"} className='each-link'>Back-Up Marks Data</Link></span>
                           </li>
                           <li>
                             <a href='#'>

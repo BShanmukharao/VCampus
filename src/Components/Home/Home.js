@@ -11,6 +11,11 @@ import BooksFeeofNewStudents from '../StudentManagement/DataEntry/NewAdmissions/
 import AllotmentOfAdmnNos from '../StudentManagement/DataEntry/NewAdmissions/AllotmentOfAdmnNos/AllotmentOfAdmnNos'
 import DefineBusStopsOfNewStudents from '../StudentManagement/DataEntry/NewAdmissions/NewStudentsTransportation/DefineBusStopsOfNewStudents/DefineBusStopsOfNewStudents'
 import DefineVehiclesForNewStudents from '../StudentManagement/DataEntry/NewAdmissions/NewStudentsTransportation/DefineVehiclesForNewStudents/DefineVehiclesForNewStudents';
+import CreateMarksData from '../StudentManagement/DataEntry/ProgressReportData/CreateMarksData/CreateMarksData'
+import EnterOrEditMarks from '../StudentManagement/DataEntry/ProgressReportData/EnterOrEditMarks/EnterOrEditMarks'
+import DeleteMarksData from '../StudentManagement/DataEntry/ProgressReportData/DeleteMarksData/DeleteMarksData'
+import RecreateMarksData from '../StudentManagement/DataEntry/ProgressReportData/RecreateMarksData/RecreateMarksData'
+import BackUpMarksData from '../StudentManagement/DataEntry/ProgressReportData/BackUpMarksData/BackUpMarksData'
 
 const routes = [
     { path: '/', component: HomeScreen},
@@ -18,7 +23,12 @@ const routes = [
     { path: '/DefineBusStopsOfNewStudents', component: DefineBusStopsOfNewStudents},
     { path: '/AllotmentOfAdmnNos', component: AllotmentOfAdmnNos },
     { path: '/BooksFeeofNewStudents', component: BooksFeeofNewStudents},
-    { path: '/DefineVehiclesForNewStudents', component: DefineVehiclesForNewStudents}
+    { path: '/DefineVehiclesForNewStudents', component: DefineVehiclesForNewStudents},
+    { path: '/CreateMarksData', component: CreateMarksData},
+    { path: "/EnterOrEditMarks", component: EnterOrEditMarks},
+    { path: "/DeleteMarksData", component: DeleteMarksData},
+    { path: "/RecreateMarksData", component: RecreateMarksData},
+    { path: "/BackUpMarksData", component: BackUpMarksData}
 ];
 
 export const Home = () => {
