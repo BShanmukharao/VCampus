@@ -16,6 +16,9 @@ import EnterOrEditMarks from '../StudentManagement/DataEntry/ProgressReportData/
 import DeleteMarksData from '../StudentManagement/DataEntry/ProgressReportData/DeleteMarksData/DeleteMarksData'
 import RecreateMarksData from '../StudentManagement/DataEntry/ProgressReportData/RecreateMarksData/RecreateMarksData'
 import BackUpMarksData from '../StudentManagement/DataEntry/ProgressReportData/BackUpMarksData/BackUpMarksData'
+import ClassFacultiesList from '../StudentManagement/DataEntry/ProgressReportData/ClassFacultiesList/ClassFacultiesList'
+import SubjectWiseFaculties from '../StudentManagement/DataEntry/ProgressReportData/SubjectWiseFaculties/SubjectWiseFaculties'
+import DefineRemarksGroup from '../StudentManagement/DataEntry/ProgressReportData/AutoRemarks/DefineRemarksGroup/DefineRemarksGroup'
 
 const routes = [
     { path: '/', component: HomeScreen},
@@ -28,7 +31,10 @@ const routes = [
     { path: "/EnterOrEditMarks", component: EnterOrEditMarks},
     { path: "/DeleteMarksData", component: DeleteMarksData},
     { path: "/RecreateMarksData", component: RecreateMarksData},
-    { path: "/BackUpMarksData", component: BackUpMarksData}
+    { path: "/BackUpMarksData", component: BackUpMarksData},
+    { path: "/ClassFacultiesList", component: ClassFacultiesList},
+    { path: "/SubjectWiseFaculties", component: SubjectWiseFaculties},
+    { path : "/DefineRemarksGroup", component: DefineRemarksGroup}
 ];
 
 export const Home = () => {

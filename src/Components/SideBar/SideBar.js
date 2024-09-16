@@ -182,14 +182,10 @@ export const SideBar = () => {
                             </a>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Subject-wise Faculties</span>
-                            </a>
+                            <span className='text'><Link to={"/home/SubjectWiseFaculties"} className='each-link'>Subject-wise Faculties</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Class Faculties List</span>
-                            </a>
+                            <span className='text'><Link to={"/home/ClassFacultiesList"} className='each-link'>Class Faculties List</Link></span>
                           </li>
                           <li>
                             <a href='#'>
@@ -198,9 +194,7 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Define Remarks Groups</span>
-                                </a>
+                                <span className='text'><Link to={"/home/DefineRemarksGroup"} className='each-link'>Define Remarks Groups</Link></span>
                               </li>
                               <li>
                                 <a href='#'>
