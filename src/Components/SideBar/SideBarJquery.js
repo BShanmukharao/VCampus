@@ -8,7 +8,6 @@ $(function () {
 
     event.preventDefault();
 
-
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
 
@@ -27,7 +26,6 @@ $(function () {
   $(".menu > ul > li > ul > li > a").on("click", function (e) {
 
     e.preventDefault();
-
 
     $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
 
@@ -126,6 +124,22 @@ $(function () {
   });
 
 
+})
+
+$(function () {
+  var windowsize = $(window).width();
+  const sidebarId = document.getElementById('SideBar-Id');
+  if (windowsize <= 992) {
+    $(function () {
+      $(this).on("click", function (e) {
+        var rootElement = e.target.id
+        if(rootElement === "side-id") {
+          e.preventDefault();
+          $(sidebarId).removeClass("addBelowStylesClass");
+        }
+      })
+    });
+  }
 })
 
 /*$(function () {

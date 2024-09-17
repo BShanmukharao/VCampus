@@ -50,30 +50,22 @@ export const SideBar = () => {
                         </Link>
                         <ul className='third-nested-menu'>
                           <li>
-                            <span className='text'><Link to={"/home/ApplicationRegistrationFee"} className='each-link'>Application / Registration Fee</Link></span>
+                            <span className='text'><Link to={"/home/ApplicationRegistrationFee"} id="side-id" className='each-link'>Application / Registration Fee</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={""} className='each-link'>New Students Monthly / Term Fee</Link></span>
+                            <span className='text'><Link to={""} id="side-id" className='each-link'>New Students Monthly / Term Fee</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>View Sold Application / Registrations</span>
-                            </a>
+                            <span className='text'><Link to={""} id="side-id" className='each-link'>View Sold Application / Registrations</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Registrations List</span>
-                            </a>
+                            <span className='text'><Link to={""} id="side-id" className='each-link'>Registrations List</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>New Admission Master Data</span>
-                            </a>
+                            <span className='text'><Link to={""} id="side-id" className='each-link'>New Admission Master Data</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>View New Admissions Master</span>
-                            </a>
+                            <span className='text'><Link to={""} id="side-id" className='each-link'>View New Admissions Master</Link></span>
                           </li>
                           <li>
                             <Link to={""}>
@@ -82,33 +74,27 @@ export const SideBar = () => {
                             </Link>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <span className='text'><Link to={"/home/DefineBusStopsOfNewStudents"} className='each-link'>Define Vehicles for New Students</Link></span>
+                                <span className='text'><Link to={"/home/DefineBusStopsOfNewStudents"} id="side-id" className='each-link'>Define Vehicles for New Students</Link></span>
                               </li>
                               <li>
-                                <span className='text'><Link to={"/home/DefineVehiclesForNewStudents"} className='each-link'>Define Bus Stops of New Students</Link></span>
+                                <span className='text'><Link to={"/home/DefineVehiclesForNewStudents"} id="side-id" className='each-link'>Define Bus Stops of New Students</Link></span>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Un-Select New Student</span>
-                            </a>
+                            <span className='text'><Link to={""} id="side-id" className='each-link'>Un-Select New Student</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={"/home/AllotmentOfAdmnNos"} className='each-link'>Allotment of Admn.Nos</Link></span>
+                            <span className='text'><Link to={"/home/AllotmentOfAdmnNos"} id="side-id" className='each-link'>Allotment of Admn.Nos</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Miscellaneous Fee Collection</span>
-                            </a>
+                            <span className='text'><Link to={""} id="side-id" className='each-link'>Miscellaneous Fee Collection</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>General Uniforms Fee Collection</span>
-                            </a>
+                            <span className='text'><Link to={""} id="side-id" className='each-link'>General Uniforms Fee Collection</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={"/home/BooksFeeofNewStudents"} className='each-link'>Books Fee of New Students</Link></span>
+                            <span className='text'><Link to={"/home/BooksFeeofNewStudents"} id="side-id" className='each-link'>Books Fee of New Students</Link></span>
                           </li>
                         </ul>
                       </li>
@@ -119,34 +105,28 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Regular Student's Master Data</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Regular Student's Master Data</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>view Regular Students Master Data</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>view Regular Students Master Data</Link></span>
+                        
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>View Old Students Master Data</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>View Old Students Master Data</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>T.C / D.C Entry</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>T.C / D.C Entry</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Detain Students</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Detain Students</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Export Photo to Folder</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Export Photo to Folder</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -157,35 +137,32 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <span className='text'><Link to={"/home/CreateMarksData"} className='each-link'>Create Marks Data</Link></span>
+                            <span className='text'><Link to={"/home/CreateMarksData"} id="side-id" className='each-link'>Create Marks Data</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={"/home/EnterOrEditMarks"} className='each-link'>Enter / Edit Marks</Link></span>
+                            <span className='text'><Link to={"/home/EnterOrEditMarks"} id="side-id" className='each-link'>Enter / Edit Marks</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={"/home/DeleteMarksData"} className='each-link'>Delete Marks Data</Link></span>
+                            <span className='text'><Link to={"/home/DeleteMarksData"} id="side-id" className='each-link'>Delete Marks Data</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={"/home/RecreateMarksData"} className='each-link'>Recreate Marks Data</Link></span>
+                            <span className='text'><Link to={"/home/RecreateMarksData"} id="side-id" className='each-link'>Recreate Marks Data</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={"/home/BackUpMarksData"} className='each-link'>Back-Up Marks Data</Link></span>
+                            <span className='text'><Link to={"/home/BackUpMarksData"} id="side-id" className='each-link'>Back-Up Marks Data</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Update Performances</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Update Performances</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>View / Update C.M.R</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>View / Update C.M.R</Link></span>      
                           </li>
                           <li>
-                            <span className='text'><Link to={"/home/SubjectWiseFaculties"} className='each-link'>Subject-wise Faculties</Link></span>
+                            <span className='text'><Link to={"/home/SubjectWiseFaculties"} id="side-id" className='each-link'>Subject-wise Faculties</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={"/home/ClassFacultiesList"} className='each-link'>Class Faculties List</Link></span>
+                            <span className='text'><Link to={"/home/ClassFacultiesList"} id="side-id" className='each-link'>Class Faculties List</Link></span>
                           </li>
                           <li>
                             <a href='#'>
@@ -194,34 +171,24 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <span className='text'><Link to={"/home/DefineRemarksGroup"} className='each-link'>Define Remarks Groups</Link></span>
+                                <span className='text'><Link to={"/home/DefineRemarksGroup"} id="side-id" className='each-link'>Define Remarks Groups</Link></span>
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Define Remarks</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Define Remarks</Link></span>                                 
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Define Auto Remarks</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Define Auto Remarks</Link></span>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Exempt all Absents</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Exempt all Absents</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Convert marks to Grades</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Convert marks to Grades</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Change Subject Properties</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Change Subject Properties</Link></span>
                           </li>
                         </ul>
                       </li>
@@ -232,74 +199,48 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>School Fee Collections</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>School Fee Collections</Link></span>
+                              
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Miscellaneous Fee Collection</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Miscellaneous Fee Collection</Link></span>
+                            
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Uniform Stocks Entry</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Uniform Stocks Entry</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Updated Uniforms Items Stocks Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Updated Uniforms Items Stocks Register</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>General Uniforms Fee Collection</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>General Uniforms Fee Collection</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Book Store Stocks Entry</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Book Store Stocks Entry</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Updated Book Store Stocks Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Updated Book Store Stocks Register</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Books Fee Collection</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Books Fee Collection</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Edit Current Year Fee Opening Dues</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Edit Current Year Fee Opening Dues</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Current Year fee Opening Dues List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Current Year fee Opening Dues List</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Left Students Fee Dues Entry</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Left Students Fee Dues Entry</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Left Students Fee Dues List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Left Students Fee Dues List</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Fee Groups</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Fee Groups</Link></span>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Transfer / Delete / Change Data of Fee</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Transfer / Delete / Change Data of Fee</Link></span>
                           </li>
                         </ul>
                       </li>
@@ -310,19 +251,16 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Absentees - Register Format</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Absentees - Register Format</Link></span>
+                              
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Absentees - Screen Format</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Absentees - Screen Format</Link></span>
+                        
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Absentees - Graphical Format</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Absentees - Graphical Format</Link></span>
+                      
                           </li>
                         </ul>
                       </li>
@@ -333,19 +271,16 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Late Comers - Register Format</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Late Comers - Register Format</Link></span>
+                      
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Late Comers - Screen Format</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Late Comers - Screen Format</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Late Comers - Graphical Format</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Late Comers - Graphical Format</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -356,31 +291,26 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Daily Homework Entry</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Daily Homework Entry</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Homework Keywords</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Homework Keywords</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Generate Homework Report</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Generate Homework Report</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Monthly Attendance</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Monthly Attendance</Link></span>
+                     
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Set Working Days</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Set Working Days</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -389,14 +319,12 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Vehicles</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Vehicles</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Bus Stops</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Bus Stops</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -407,19 +335,16 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Section-wise No.of Periods</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Section-wise No.of Periods</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Class-wise Subjects / Faculties</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Class-wise Subjects / Faculties</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Faculty-wise Timetable</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Faculty-wise Timetable</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -428,14 +353,12 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Table View Timetable</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Table View Timetable</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Tree View Timetable</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Tree View Timetable</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
@@ -448,19 +371,16 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Types</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Types</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Greetings</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Greetings</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Create Greetings</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Create Greetings</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -471,36 +391,30 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Types</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Types</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Certificates</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Certificates</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Create Certificates</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Create Certificates</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Bondified Cum Study Certificate</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Bondified Cum Study Certificate</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Bondified Cum Conduct Certificate</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Bondified Cum Conduct Certificate</Link></span>
+                  
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Transfer Certificate / Record Sheet</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Transfer Certificate / Record Sheet</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -509,19 +423,16 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Prepare New Diary</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Prepare New Diary</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Record Academic Events</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Record Academic Events</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>View Academic Events</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>View Academic Events</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -532,14 +443,11 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Create New Holidays</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Create New Holidays</Link></span>
+                      
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Edit Holidays</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Edit Holidays</Link></span>
                           </li>
                         </ul>
                       </li>
@@ -558,14 +466,12 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Application / Registration Fee Report</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Application / Registration Fee Report</Link></span>
+                           
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Print Registrations List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Print Registrations List</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -574,9 +480,8 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>New Admissions Fee Receipts Register</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>New Admissions Fee Receipts Register</Link></span>
+                              
                               </li>
                               <li>
                                 <a href='#'>
@@ -585,123 +490,100 @@ export const SideBar = () => {
                                 </a>
                                 <ul className='fifth-nested-menu'>
                                   <li>
-                                    <a href='#'>
-                                      <span className='text'>Individual Card</span>
-                                    </a>
+                                  <span className='text'><Link to={""} id="side-id" className='each-link'>Individual Card</Link></span>
+                                  
                                   </li>
                                   <li>
-                                    <a href='#'>
-                                      <span className='text'>Class-wise R.R.B List</span>
-                                    </a>
+                                  <span className='text'><Link to={""} id="side-id" className='each-link'>Class-wise R.R.B List</Link></span>
+                                  
                                   </li>
                                 </ul>
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>New Admissions Fee Dues List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>New Admissions Fee Dues List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>New Admissions Fee Structure</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>New Admissions Fee Structure</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Transport Fee Structure</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Transport Fee Structure</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Merit Students List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Merit Students List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Selected Students List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Selected Students List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Intimation Letters</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Intimation Letters</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Class Entry List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Class Entry List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>New Admissions Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>New Admissions Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Admission Forms</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Admission Forms</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>New Students Photos List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>New Students Photos List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Summary of Admissions</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Summary of Admissions</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>New Admissions Statistics</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>New Admissions Statistics</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Language-wise Summary</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Language-wise Summary</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Miscellaneous Fee Collections Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Miscellaneous Fee Collections Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>General Uniform Fee Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>General Uniform Fee Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Daily Books Fee Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Daily Books Fee Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Books Fee Dues / R.R.B</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Books Fee Dues / R.R.B</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Item-wise Stock Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Item-wise Stock Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>List of Store Items Groups</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>List of Store Items Groups</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>List of Items in Store</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>List of Items in Store</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>List of Class-wise Book Sets</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>List of Class-wise Book Sets</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -710,26 +592,22 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Students Who Took Books</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Students Who Took Books</Link></span>
+                             
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Students Who Have not Taken Books</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Students Who Have not Taken Books</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>List of Items to Re-Order</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>List of Items to Re-Order</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Transport Areas List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Transport Areas List</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -746,14 +624,12 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Complete Register</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Complete Register</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Class-wise Register</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Class-wise Register</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
@@ -764,14 +640,12 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Admission No. Duplicates</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Admission No. Duplicates</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Roll No. Duplicates</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Roll No. Duplicates</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
@@ -782,181 +656,146 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Roll No. wise List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Roll No. wise List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Admn. No. wise List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Admn. No. wise List</Link></span>
+                            
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Name-wise List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Name-wise List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Roll No. wise List With Mother Name</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Roll No. wise List With Mother Name</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Caste-wise List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Caste-wise List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Sub-Caste wise List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Sub-Caste wise List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Religion-wise List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Religion-wise List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Mother Tongues List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Mother Tongues List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>1st and 2nd Language-wise List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>1st and 2nd Language-wise List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Missing 1st and 2nd Language List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Missing 1st and 2nd Language List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>New Admissions List-1</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>New Admissions List-1</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Admn.No wise New Students List-2</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Admn.No wise New Students List-2</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Fee Group-wise Student List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Group-wise Student List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Kin and Kith lists</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Kin and Kith lists</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>House List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>House List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Phone No.s List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Phone No.s List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Aadhaar No.s List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Aadhaar No.s List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Students Photos List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Students Photos List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Students P.E No.s List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Students P.E No.s List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Identification Marks List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Identification Marks List</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Students Lists</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Students Lists</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Excluded Students List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Excluded Students List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Re-Admitted Students List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Re-Admitted Students List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Address Labels List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Address Labels List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>ID / Library Cards</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>ID / Library Cards</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>List of Addresses of Students</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>List of Addresses of Students</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Full Concession List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Full Concession List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Concessions Availed Student</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Concessions Availed Student</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Students Ages</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Students Ages</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Age Groups</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Age Groups</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Above 18 Yrs Age Students</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Above 18 Yrs Age Students</Link></span>
+                        
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Birthdays List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Birthdays List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Student Physical Info Reports</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Student Physical Info Reports</Link></span>
+                         
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>E C A Reports</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>E C A Reports</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Certificates Deposited</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Certificates Deposited</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -967,19 +806,16 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Detailed Strength Report</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Detailed Strength Report</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Summary of Strength Report</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Summary of Strength Report</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>School Strength Statistics</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>School Strength Statistics</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -990,36 +826,30 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Areas List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Areas List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Vehicles List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Vehicles List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Area-wise Students List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Area-wise Students List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Vehicle-wise Students List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Vehicle-wise Students List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Section-wise List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Section-wise List</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Hall Ticket</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Hall Ticket</Link></span>
+                     
                       </li>
                       <li>
                         <a href='#'>
@@ -1028,24 +858,20 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Marks Entry Blank List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Marks Entry Blank List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Marks Check List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Marks Check List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Remarks Code Blank List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Remarks Code Blank List</Link></span>
+                        
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Remarks Code Check List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Remarks Code Check List</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -1056,34 +882,28 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Graphical</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Graphical</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Plain Reports</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Plain Reports</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Scholostic Record</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Scholostic Record</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Final Result Report</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Final Result Report</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Patch Graphic</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Patch Graphic</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Check All Data</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Check All Data</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -1094,64 +914,52 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Performance Abstract</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Performance Abstract</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Class-wise Ranks List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Class-wise Ranks List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Toppers List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Toppers List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Honours List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Honours List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Failed List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Failed List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Subject Average</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Subject Average</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Subject-wise Precentage of Marks</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Subject-wise Precentage of Marks</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>List of Marks in %</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>List of Marks in %</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Remedial Students List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Remedial Students List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>C.M.R Check List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>C.M.R Check List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Centeral Marks Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Centeral Marks Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Final Result Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Final Result Register</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -1162,24 +970,20 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Class-wise Performance</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Class-wise Performance</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Subject-wise Performance</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Subject-wise Performance</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Teacher-wise Performance</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Teacher-wise Performance</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Student-wise Performance</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Student-wise Performance</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -1190,14 +994,12 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Short Remarks</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Short Remarks</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Long Remarks</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Long Remarks</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -1208,19 +1010,16 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>School Fee Receipts Register (D.F.C.R)</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>School Fee Receipts Register (D.F.C.R)</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Edited Fee Receipts Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Edited Fee Receipts Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Deleted Fee Receipts Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Deleted Fee Receipts Register</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -1229,31 +1028,26 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Non-Ascending Fee Receipt Dates Register</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Non-Ascending Fee Receipt Dates Register</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Non-Ascending Fee Receipt No.s Register</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Non-Ascending Fee Receipt No.s Register</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>List Students Fee D.F.C.R</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>List Students Fee D.F.C.R</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Miscellaneous Fee Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Miscellaneous Fee Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>General Uniform Fee Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>General Uniform Fee Register</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -1262,34 +1056,28 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Daily Books Fee Report</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Daily Books Fee Report</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Books Fee Dues / R.R.B</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Books Fee Dues / R.R.B</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Item-wise Stock Register</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Item-wise Stock Register</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>List of Store Items Groups</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>List of Store Items Groups</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>List of Items Groups</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>List of Items Groups</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>List of Class-wise Book Sets</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>List of Class-wise Book Sets</Link></span>
+                              
                               </li>
                               <li>
                                 <a href='#'>
@@ -1298,33 +1086,28 @@ export const SideBar = () => {
                                 </a>
                                 <ul className='fifth-nested-menu'>
                                   <li>
-                                    <a href='#'>
-                                      <span className='text'>Students Who Bought Books</span>
-                                    </a>
+                                  <span className='text'><Link to={""} id="side-id" className='each-link'>Students Who Bought Books</Link></span>
+                                  
                                   </li>
                                   <li>
-                                    <a href='#'>
-                                      <span className='text'>Students who Have Not Bought Books</span>
-                                    </a>
+                                  <span className='text'><Link to={""} id="side-id" className='each-link'>Students who Have Not Bought Books</Link></span>
+                                  
                                   </li>
                                 </ul>
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>List of Items to Re-Order</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>List of Items to Re-Order</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>All Fee Types D.F.C.Rs</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>All Fee Types D.F.C.Rs</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Transaction No-wise D.F.C.Rs</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Transaction No-wise D.F.C.Rs</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -1333,21 +1116,18 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Monthly Registers</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Monthly Registers</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Specific Period</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Specific Period</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Term Registers</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Term Registers</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -1356,44 +1136,36 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Data Head-wise Fee Received Lists</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Data Head-wise Fee Received Lists</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>All Fee Heads</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>All Fee Heads</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Full Fee Received Lists</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Full Fee Received Lists</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Fee Unreceived Lists</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Unreceived Lists</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Received Less Than a Specific Amount</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Received Less Than a Specific Amount</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Fee Received Before / After due Dates</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Received Before / After due Dates</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Fee Received Other Than in Cash</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Received Other Than in Cash</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Reconcle Fee Cheques Clearance</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Reconcle Fee Cheques Clearance</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
@@ -1404,24 +1176,20 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Month / Term-wise Fines List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Month / Term-wise Fines List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Total concessions Granted And Availed List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Total concessions Granted And Availed List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Month / Term-wise concessions Availed List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Month / Term-wise concessions Availed List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Month / Term-wise concessions Reversed</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Month / Term-wise concessions Reversed</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
@@ -1432,19 +1200,16 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Individual Card</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Individual Card</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Class-wise R.R.B List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Class-wise R.R.B List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Summary Report</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Summary Report</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
@@ -1455,51 +1220,42 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Detailed Dues List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Detailed Dues List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Summary of Dues List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Summary of Dues List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Fee Due Slip</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Due Slip</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>No Fee Due Slips</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>No Fee Due Slips</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Fee Dues Memos</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Dues Memos</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Permitted Students List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Permitted Students List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Excess Fee Received From Students</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Excess Fee Received From Students</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Fee Defaulters List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Defaulters List</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Transport Fee Received</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Transport Fee Received</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -1508,43 +1264,36 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Transport Individual Card</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Transport Individual Card</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Transport R.R.B List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Transport R.R.B List</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Transport Fee Dues</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Transport Fee Dues</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Left Students Fee Dues List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Left Students Fee Dues List</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>School Fee Structure</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>School Fee Structure</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Transport Fee Structure</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Transport Fee Structure</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Today's S.M.S Sent Reports</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Today's S.M.S Sent Reports</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -1553,36 +1302,30 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Report Writer</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Report Writer</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Letter Writer</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Letter Writer</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Greetings / Certificate</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Greetings / Certificate</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Bondified-Cum-Study Certificate</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Bondified-Cum-Study Certificate</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Bondified-Cum-Conduct Certificate</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Bondified-Cum-Conduct Certificate</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Transfer Certificate / Record Sheet</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Transfer Certificate / Record Sheet</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -1591,14 +1334,12 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Blank Attendance Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Blank Attendance Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Attendance Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Attendance Register</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -1607,73 +1348,60 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Check List</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Check List</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Blank Form</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Blank Form</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Daily Absentees Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Daily Absentees Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Daily Late Comers Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Daily Late Comers Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Daily Absentees Reminder</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Daily Absentees Reminder</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Daily Late Comers Reminder</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Daily Late Comers Reminder</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>General Attendance Register</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>General Attendance Register</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Attendance Precentagess</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Attendance Precentagess</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Attendance Memos</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Attendance Memos</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Working Days List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Working Days List</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Generate Homework Report</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Generate Homework Report</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Academic Events Report</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Academic Events Report</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Print Holidays Calender</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Print Holidays Calender</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -1682,31 +1410,26 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>General Holidays</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>General Holidays</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Fixed Holidays</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Fixed Holidays</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Optional Holidays</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Optional Holidays</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>All Holidays</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>All Holidays</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Miscellaneous Report</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Miscellaneous Report</Link></span>
+                      
                       </li>
                     </ul>
                   </li>
@@ -1723,21 +1446,18 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Find a Regular Student</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Find a Regular Student</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Find a Old Student</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Find a Old Student</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>SMS Balance</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>SMS Balance</Link></span>
+                      
                       </li>
                     </ul>
                   </li>
@@ -1754,9 +1474,8 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>New Admission Settings</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>New Admission Settings</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -1765,67 +1484,52 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>New Application Fee</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>New Application Fee</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>New Registrations Fee</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>New Registrations Fee</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>New Fee Months</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>New Fee Months</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>New Fee Structure</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>New Fee Structure</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>New Admission Selection Criteria</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>New Admission Selection Criteria</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Export New Admissions</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Export New Admissions</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Prepare New Data Files</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Prepare New Data Files</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Branches Management</span>
-
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Branches Management</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Select Branch</span>
-
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Select Branch</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Students Master Settings</span>
-
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Students Master Settings</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>General Settings</span>
-
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>General Settings</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -1840,9 +1544,8 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>School Fee Months</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>School Fee Months</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
@@ -1853,41 +1556,34 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>School Fee Structure</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>School Fee Structure</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Fee Settings</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Settings</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Receipt Nos Control</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Receipt Nos Control</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Fee Collection Modes</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Collection Modes</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Fee Table</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Table</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>User Charges Table</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>User Charges Table</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Branch Codes</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Branch Codes</Link></span>
+                          
                           </li>
                           <li>
                             <a href='#'>
@@ -1896,51 +1592,42 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>General Uniform Fee Structure</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>General Uniform Fee Structure</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Define Uniform Fee Receipt No.(s)</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Define Uniform Fee Receipt No.(s)</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Miscellaneous Fee Heads</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Miscellaneous Fee Heads</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Miscellaneous Fee Receipt No.(s)</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Miscellaneous Fee Receipt No.(s)</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Store Item Groups</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Store Item Groups</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Store Items</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Store Items</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Book Sets</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Book Sets</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Set Rules for Books Fee</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Set Rules for Books Fee</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Books Fee Receipt No</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Books Fee Receipt No</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -1951,69 +1638,56 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Subjects</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Subjects</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Sections</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Sections</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Categories</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Categories</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Religions</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Religions</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Castes</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Castes</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Sub-Castes</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Sub-Castes</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Mother Tongues</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Mother Tongues</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Medium(s)</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Medium(s)</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Occupations</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Occupations</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Set Houses</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Set Houses</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define syllabus</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define syllabus</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define States</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define States</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Maths / Science</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Maths / Science</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -2024,36 +1698,30 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Create / Modify Classes</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Create / Modify Classes</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Set Subjects for Each class</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Set Subjects for Each class</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Maximun Classes</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Maximun Classes</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Maximun Subjects</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Maximun Subjects</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Classes List</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Classes List</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Define Exams</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Define Exams</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -2062,46 +1730,38 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define OverAll Grades</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define OverAll Grades</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define OverAll Remarks</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define OverAll Remarks</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Honours</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Honours</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Subject Grades</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Subject Grades</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Subject Ranks to Grades</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Subject Ranks to Grades</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define GPA Remarks</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define GPA Remarks</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Skill Grades</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Skill Grades</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Set Exam Details</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Set Exam Details</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -2110,24 +1770,20 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Fine Settings</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Fine Settings</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Define Fines Table</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Fines Table</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Fill Attendance %</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Fill Attendance %</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Attendance Remarks</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Attendance Remarks</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
@@ -2138,26 +1794,22 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Master to Archive</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Master to Archive</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Archive to Master</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Archive to Master</Link></span>
+                          
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Renumber Roll Nos</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Renumber Roll Nos</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Global Changes</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Global Changes</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -2166,14 +1818,11 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Fee Due Codes</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Fee Due Codes</Link></span>
+                          
                           </li>
                           <li>
-                            <a href='#'>
-                              <span className='text'>Subject-wise Data / Time</span>
-                            </a>
+                          <span className='text'><Link to={""} id="side-id" className='each-link'>Subject-wise Data / Time</Link></span>
                           </li>
                         </ul>
                       </li>
@@ -2186,10 +1835,8 @@ export const SideBar = () => {
                     </a>
                     <ul className='second-nested-menu'>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Set Academic Year</span>
-
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Set Academic Year</Link></span>
+                      
                       </li>
                       <li>
                         <a href='#'>
@@ -2204,19 +1851,16 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Fee to Accounts</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Fee to Accounts</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>-Wise Fee Dues</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>-Wise Fee Dues</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Back-up Financial Year</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Back-up Financial Year</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
@@ -2227,35 +1871,27 @@ export const SideBar = () => {
                             </a>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Promote Regular Students</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Promote Regular Students</Link></span>
+                              
                               </li>
                               <li>
-                                <a href='#'>
-                                  <span className='text'>Promote Re-Exam Students</span>
-                                </a>
+                              <span className='text'><Link to={""} id="side-id" className='each-link'>Promote Re-Exam Students</Link></span>
+                              
                               </li>
                             </ul>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Detain Settings</span>
-
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Detain Settings</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Set Last Admn Nos</span>
-
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Set Last Admn Nos</Link></span>
+                      
                       </li>
                       <li>
-                        <a href='#'>
-                          <span className='text'>Set Date to Check Age</span>
-                        </a>
+                      <span className='text'><Link to={""} id="side-id" className='each-link'>Set Date to Check Age</Link></span>
                       </li>
                     </ul>
                   </li>
