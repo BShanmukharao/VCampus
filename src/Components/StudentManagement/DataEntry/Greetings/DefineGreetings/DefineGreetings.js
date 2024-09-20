@@ -4,9 +4,9 @@ import Button from 'react-bootstrap/Button';
 import { Modal } from 'react-bootstrap';
 
 
-import './DefineVehiclesForNewStudents.css'
+import './DefineGreetings.css'
 
-function DefineVehiclesForNewStudents() {
+function DefineGreetings() {
 
     const [showAddPopUp, setshowAddPopUp] = useState(false)
     const [showUpdatePopUp, setshowUpdatePopUp] = useState(false)
@@ -45,98 +45,28 @@ function DefineVehiclesForNewStudents() {
     return (
         <>
             <div className='define-vehicles-for-new-students-bg-container'>
-                <h1 className='define-vehicles-for-new-students-main-heading mb-0'>AREAS MASTER</h1>
+                <h1 className='define-vehicles-for-new-students-main-heading mb-0'>GREETING MESSAGES</h1>
                 <div className='container-fluid pt-2'>
                     <div className='row'>
                         <div className='col-xs-12 define-vehicles-for-new-students-table-container mb-3'>
                             <table className="define-vehicles-for-new-students-table">
                                 <tr>
-                                    <th>VEHICLE TYPE</th>
-                                    <th>VEHICLE NO</th>
-                                    <th>AREA CODE</th>
-                                    <th>AREA[STOP] NAME</th>
-                                    <th>KILOMETERS</th>
-                                    <th>FARE-RS</th>
+                                    <th>GREETING TYPE</th>
+                                    <th>SERIAL NO.</th>
+                                    <th>GREETING MESSAGE</th>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>101</td>
-                                    <td>DUNDIGAL</td>
-                                    <td>0.00</td>
-                                    <td>140.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>102</td>
-                                    <td>DOMARA POCHAMPALLY</td>
-                                    <td>0.00</td>
-                                    <td>140.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>104</td>
-                                    <td>SATYAM COMPUTERS</td>
-                                    <td>0.00</td>
-                                    <td>100.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>105</td>
-                                    <td>BAHADURPALLY X RODES</td>
-                                    <td>0.00</td>
-                                    <td>100.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.3</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.2</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>SURARAM COLONY</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.3</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>SAI BABA NAGAR</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.2</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
+                                    <td>
+                                        <select className='input-item-in-table'>
+                                            <option>BIRTHDAY GREETING TO STUDENTS</option>
+                                            <option>ON GREETING 1ST RANK</option>
+                                            <option>ON GREETINGS 1ST RANK</option>
+                                            <option>ON GREETINGS 2ND RANK</option>
+                                            <option>ON SUCCESS IN INTER SCHOOL COMPETETIONS</option>
+                                        </select>
+                                    </td>
+                                    <td>1</td>
+                                    <td>HAPPY BIRTHDAY TO YOU</td>
                                 </tr>
                             </table>
                         </div>
@@ -248,4 +178,4 @@ function DefineVehiclesForNewStudents() {
     )
 }
 
-export default DefineVehiclesForNewStudents;
+export default DefineGreetings;

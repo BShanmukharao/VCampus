@@ -19,6 +19,15 @@ import BackUpMarksData from '../StudentManagement/DataEntry/ProgressReportData/B
 import ClassFacultiesList from '../StudentManagement/DataEntry/ProgressReportData/ClassFacultiesList/ClassFacultiesList'
 import SubjectWiseFaculties from '../StudentManagement/DataEntry/ProgressReportData/SubjectWiseFaculties/SubjectWiseFaculties'
 import DefineRemarksGroup from '../StudentManagement/DataEntry/ProgressReportData/AutoRemarks/DefineRemarksGroup/DefineRemarksGroup'
+import DefineRemarks from '../StudentManagement/DataEntry/ProgressReportData/AutoRemarks/DefineRemarks/DefineRemarks'
+import DefineAutoRemarks from '../StudentManagement/DataEntry/ProgressReportData/AutoRemarks/DefineAutoRemarks/DefineAutoRemarks'
+import MonthlyAttendance from '../StudentManagement/DataEntry/MonthlyAttendance/MonthlyAttendance'
+import SetWorkingDays from '../StudentManagement/DataEntry/SetWorkingDays/SetWorkingDays'
+import DefineVehicles from '../StudentManagement/DataEntry/Transportation/DefineVehicles/DefineVehicles'
+import DefineBusStops from '../StudentManagement/DataEntry/Transportation/DefineBusStops/DefineBusStops'
+import DefineTypes from '../StudentManagement/DataEntry/Greetings/DefineTypes/DefineTypes'
+import DefineGreetings from '../StudentManagement/DataEntry/Greetings/DefineGreetings/DefineGreetings'
+import CreateGreetings from '../StudentManagement/DataEntry/Greetings/CreateGreetings/CreateGreetings'
 
 const routes = [
     { path: '/', component: HomeScreen},
@@ -34,7 +43,16 @@ const routes = [
     { path: "/BackUpMarksData", component: BackUpMarksData},
     { path: "/ClassFacultiesList", component: ClassFacultiesList},
     { path: "/SubjectWiseFaculties", component: SubjectWiseFaculties},
-    { path : "/DefineRemarksGroup", component: DefineRemarksGroup}
+    { path: "/DefineRemarksGroup", component: DefineRemarksGroup},
+    { path: "/DefineRemarks", component: DefineRemarks},
+    { path: "/DefineAutoRemarks", component: DefineAutoRemarks},
+    { path: "/MonthlyAttendance", component: MonthlyAttendance},
+    { path: "/SetWorkingDays", component: SetWorkingDays},
+    { path: "/DefineVehicles", component: DefineVehicles},
+    { path: "/DefineBusStops", component: DefineBusStops},
+    { path: "/DefineTypes", component: DefineTypes},
+    { path: "/DefineGreetings", component: DefineGreetings},
+    { path: "/CreateGreetings", component: CreateGreetings}
 ];
 
 export const Home = () => {

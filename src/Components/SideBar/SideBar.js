@@ -174,10 +174,10 @@ export const SideBar = () => {
                                 <span className='text'><Link to={"/home/DefineRemarksGroup"} id="side-id" className='each-link'>Define Remarks Groups</Link></span>
                               </li>
                               <li>
-                              <span className='text'><Link to={""} id="side-id" className='each-link'>Define Remarks</Link></span>                                 
+                              <span className='text'><Link to={"/home/DefineRemarks"} id="side-id" className='each-link'>Define Remarks</Link></span>                                 
                               </li>
                               <li>
-                              <span className='text'><Link to={""} id="side-id" className='each-link'>Define Auto Remarks</Link></span>
+                              <span className='text'><Link to={"/home/DefineAutoRemarks"} id="side-id" className='each-link'>Define Auto Remarks</Link></span>
                               </li>
                             </ul>
                           </li>
@@ -305,12 +305,11 @@ export const SideBar = () => {
                         </ul>
                       </li>
                       <li>
-                      <span className='text'><Link to={""} id="side-id" className='each-link'>Monthly Attendance</Link></span>
+                      <span className='text'><Link to={"/home/MonthlyAttendance"} id="side-id" className='each-link'>Monthly Attendance</Link></span>
                      
                       </li>
                       <li>
-                      <span className='text'><Link to={""} id="side-id" className='each-link'>Set Working Days</Link></span>
-                      
+                      <span className='text'><Link to={"/home/SetWorkingDays"} id="side-id" className='each-link'>Set Working Days</Link></span>   
                       </li>
                       <li>
                         <a href='#'>
@@ -319,11 +318,11 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Vehicles</Link></span>
+                          <span className='text'><Link to={"/home/DefineVehicles"} id="side-id" className='each-link'>Define Vehicles</Link></span>
                           
                           </li>
                           <li>
-                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Bus Stops</Link></span>
+                          <span className='text'><Link to={"/home/DefineBusStops"} id="side-id" className='each-link'>Define Bus Stops</Link></span>
                           
                           </li>
                         </ul>
@@ -371,15 +370,15 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Types</Link></span>
+                          <span className='text'><Link to={"/home/DefineTypes"} id="side-id" className='each-link'>Define Types</Link></span>
                           
                           </li>
                           <li>
-                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Greetings</Link></span>
+                          <span className='text'><Link to={"/home/DefineGreetings"} id="side-id" className='each-link'>Define Greetings</Link></span>
                           
                           </li>
                           <li>
-                          <span className='text'><Link to={""} id="side-id" className='each-link'>Create Greetings</Link></span>
+                          <span className='text'><Link to={"/home/CreateGreetings"} id="side-id" className='each-link'>Create Greetings</Link></span>
                           
                           </li>
                         </ul>

@@ -1,12 +1,28 @@
 import { useState, useEffect } from 'react';
+import React from 'react';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import { Modal } from 'react-bootstrap';
 
 
-import './DefineVehiclesForNewStudents.css'
+import './CreateGreetings.css'
 
-function DefineVehiclesForNewStudents() {
+function CreateGreetings() {
+
+    const [getTodayData, setTodayDate] = useState('');
+
+    useEffect(() => {
+        // get today date function
+
+        const currentDate = new Date()
+
+        const day = currentDate.getDate();
+        const month = currentDate.getMonth() + 1;
+        const year = currentDate.getFullYear();
+
+        const formattedDate = `${day}-${month}-${year}`;
+        setTodayDate(formattedDate)
+    }, []);
 
     const [showAddPopUp, setshowAddPopUp] = useState(false)
     const [showUpdatePopUp, setshowUpdatePopUp] = useState(false)
@@ -45,98 +61,52 @@ function DefineVehiclesForNewStudents() {
     return (
         <>
             <div className='define-vehicles-for-new-students-bg-container'>
-                <h1 className='define-vehicles-for-new-students-main-heading mb-0'>AREAS MASTER</h1>
+                <h1 className='define-vehicles-for-new-students-main-heading mb-0'>CREATE GREETINGS</h1>
                 <div className='container-fluid pt-2'>
                     <div className='row'>
-                        <div className='col-xs-12 define-vehicles-for-new-students-table-container mb-3'>
+                        <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
+                            <label className='input-label'>GREETINGS</label><br />
+                            <select className="input-filed" defaultValue="NURSARY">
+                                <option value="nursary">BIRTHDAY GREETING TO STUDENTS</option>
+                                <option value="L.K.G">ON GETTING 1ST RANK</option>
+                                <option value="U.K.G">ON GETTING 2ST RANK</option>
+                                <option value="class-1">ON GETTING 3ST RANK</option>
+                                <option value="class-2">ON SUCCESS IN INTER SCHOOL COMPETETIONS</option>
+                            </select>
+                        </div>
+                        <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
+                            <label className='input-label'>TODAY DATE</label><br />
+                            <input type='text' className="input-filed" value={getTodayData} onChange={() => { }} />
+                        </div>
+                        <div className='col-xs-12 define-vehicles-for-new-students-table-container mt-3 mb-3'>
                             <table className="define-vehicles-for-new-students-table">
                                 <tr>
-                                    <th>VEHICLE TYPE</th>
-                                    <th>VEHICLE NO</th>
-                                    <th>AREA CODE</th>
-                                    <th>AREA[STOP] NAME</th>
-                                    <th>KILOMETERS</th>
-                                    <th>FARE-RS</th>
+                                    <th>ADMN.NO</th>
+                                    <th>STUDENT NAME</th>
+                                    <th>CLASS</th>
+                                    <th>SECTION</th>
+                                    <th>ROLL NO</th>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>101</td>
-                                    <td>DUNDIGAL</td>
-                                    <td>0.00</td>
-                                    <td>140.00</td>
+                                    <td>1701</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>0</td>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>102</td>
-                                    <td>DOMARA POCHAMPALLY</td>
-                                    <td>0.00</td>
-                                    <td>140.00</td>
+                                    <td>2273</td>
+                                    <td>RUSHIKA S</td>
+                                    <td>X-CLASS</td>
+                                    <td>A</td>
+                                    <td>30</td>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>104</td>
-                                    <td>SATYAM COMPUTERS</td>
-                                    <td>0.00</td>
-                                    <td>100.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>105</td>
-                                    <td>BAHADURPALLY X RODES</td>
-                                    <td>0.00</td>
-                                    <td>100.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.3</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.2</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>SURARAM COLONY</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.3</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>SAI BABA NAGAR</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.2</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
+                                    <td>2758</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>0</td>
                                 </tr>
                             </table>
                         </div>
@@ -248,4 +218,4 @@ function DefineVehiclesForNewStudents() {
     )
 }
 
-export default DefineVehiclesForNewStudents;
+export default CreateGreetings;

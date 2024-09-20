@@ -4,9 +4,9 @@ import Button from 'react-bootstrap/Button';
 import { Modal } from 'react-bootstrap';
 
 
-import './DefineVehiclesForNewStudents.css'
+import './DefineTypes.css'
 
-function DefineVehiclesForNewStudents() {
+function DefineTypes() {
 
     const [showAddPopUp, setshowAddPopUp] = useState(false)
     const [showUpdatePopUp, setshowUpdatePopUp] = useState(false)
@@ -51,92 +51,28 @@ function DefineVehiclesForNewStudents() {
                         <div className='col-xs-12 define-vehicles-for-new-students-table-container mb-3'>
                             <table className="define-vehicles-for-new-students-table">
                                 <tr>
-                                    <th>VEHICLE TYPE</th>
-                                    <th>VEHICLE NO</th>
-                                    <th>AREA CODE</th>
-                                    <th>AREA[STOP] NAME</th>
-                                    <th>KILOMETERS</th>
-                                    <th>FARE-RS</th>
+                                    <th>CODE</th>
+                                    <th>GREETINGS TYPE</th>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>101</td>
-                                    <td>DUNDIGAL</td>
-                                    <td>0.00</td>
-                                    <td>140.00</td>
+                                    <td>1</td>
+                                    <td>BIRTHDAY GREETINGS TO STUDENTS</td>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>102</td>
-                                    <td>DOMARA POCHAMPALLY</td>
-                                    <td>0.00</td>
-                                    <td>140.00</td>
+                                    <td>2</td>
+                                    <td>ON GETTINGS 1ST RANK</td>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
+                                    <td>3</td>
+                                    <td>ON GETTINGS 2ST RANK</td>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>104</td>
-                                    <td>SATYAM COMPUTERS</td>
-                                    <td>0.00</td>
-                                    <td>100.00</td>
+                                    <td>4</td>
+                                    <td>ON GETTINGS 3ST RANK</td>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>105</td>
-                                    <td>BAHADURPALLY X RODES</td>
-                                    <td>0.00</td>
-                                    <td>100.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.3</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.2</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>SURARAM COLONY</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.3</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.1</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>SAI BABA NAGAR</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.2</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
+                                    <td>5</td>
+                                    <td>ON SUCCESS IN INTER SCHOOL COMPETETIONS</td>
                                 </tr>
                             </table>
                         </div>
@@ -248,4 +184,4 @@ function DefineVehiclesForNewStudents() {
     )
 }
 
-export default DefineVehiclesForNewStudents;
+export default DefineTypes;

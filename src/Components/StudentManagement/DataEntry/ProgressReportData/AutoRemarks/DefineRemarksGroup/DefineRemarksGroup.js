@@ -3,7 +3,7 @@ import './DefineRemarksGroup.css'
 
 function DefineRemarksGroup() {
     return (
-        <div className='define-bus-stops-of-new-students-bg-container'>
+        <div className='define-remarks-group-stops-of-new-students-bg-container'>
             <h1 className='define-bus-stops-of-new-students-main-heading mb-0'>AUTO REMARKS GROUPS</h1>
             <div className='container-fluid pt-2'>
                 <div className='row'>
@@ -29,7 +29,6 @@ function DefineRemarksGroup() {
                         <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button'>ADD</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-secondary' type='submit'>EDIT</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button'>DELETE</button>
-                        <button className='define-bus-stops-of-new-students-buttons btn btn-success' type='button'>FINISH</button>
                     </div>
                 </div>
             </div>

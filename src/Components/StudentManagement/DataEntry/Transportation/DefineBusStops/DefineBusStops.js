@@ -4,9 +4,9 @@ import Button from 'react-bootstrap/Button';
 import { Modal } from 'react-bootstrap';
 
 
-import './DefineVehiclesForNewStudents.css'
+import './DefineBusStops.css'
 
-function DefineVehiclesForNewStudents() {
+function DefineBusStops() {
 
     const [showAddPopUp, setshowAddPopUp] = useState(false)
     const [showUpdatePopUp, setshowUpdatePopUp] = useState(false)
@@ -54,7 +54,7 @@ function DefineVehiclesForNewStudents() {
                                     <th>VEHICLE TYPE</th>
                                     <th>VEHICLE NO</th>
                                     <th>AREA CODE</th>
-                                    <th>AREA[STOP] NAME</th>
+                                    <th>AREA [STOP] NAME</th>
                                     <th>KILOMETERS</th>
                                     <th>FARE-RS</th>
                                 </tr>
@@ -62,81 +62,73 @@ function DefineVehiclesForNewStudents() {
                                     <td>ROUTE NO.1</td>
                                     <td>TS08UF2268</td>
                                     <td>101</td>
-                                    <td>DUNDIGAL</td>
+                                    <td>SURARAM COLONY</td>
                                     <td>0.00</td>
-                                    <td>140.00</td>
+                                    <td>1000.00</td>
                                 </tr>
                                 <tr>
                                     <td>ROUTE NO.1</td>
                                     <td>TS08UF2268</td>
                                     <td>102</td>
-                                    <td>DOMARA POCHAMPALLY</td>
+                                    <td>SAIBABA NAGAR</td>
                                     <td>0.00</td>
-                                    <td>140.00</td>
+                                    <td>1000.00</td>
                                 </tr>
                                 <tr>
                                     <td>ROUTE NO.1</td>
                                     <td>TS08UF2268</td>
                                     <td>103</td>
-                                    <td>GANDIMAISAMA</td>
+                                    <td>SHIVALAYA NAGAR</td>
                                     <td>0.00</td>
-                                    <td>130.00</td>
+                                    <td>1000.00</td>
                                 </tr>
                                 <tr>
                                     <td>ROUTE NO.1</td>
                                     <td>TS08UF2268</td>
                                     <td>104</td>
-                                    <td>SATYAM COMPUTERS</td>
+                                    <td>RAJEEV GANDHI NAGAR</td>
                                     <td>0.00</td>
-                                    <td>100.00</td>
+                                    <td>1000.00</td>
                                 </tr>
                                 <tr>
                                     <td>ROUTE NO.1</td>
                                     <td>TS08UF2268</td>
                                     <td>105</td>
-                                    <td>BAHADURPALLY X RODES</td>
+                                    <td>VENKA TRAM NAGAR</td>
                                     <td>0.00</td>
-                                    <td>100.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.3</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.2</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>SURARAM COLONY</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
-                                </tr>
-                                <tr>
-                                    <td>ROUTE NO.3</td>
-                                    <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
-                                    <td>0.00</td>
-                                    <td>130.00</td>
+                                    <td>1000.00</td>
                                 </tr>
                                 <tr>
                                     <td>ROUTE NO.1</td>
                                     <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>SAI BABA NAGAR</td>
+                                    <td>106</td>
+                                    <td>VAISHNAVI NAGAR</td>
                                     <td>0.00</td>
-                                    <td>130.00</td>
+                                    <td>1000.00</td>
                                 </tr>
                                 <tr>
-                                    <td>ROUTE NO.2</td>
+                                    <td>ROUTE NO.1</td>
                                     <td>TS08UF2268</td>
-                                    <td>103</td>
-                                    <td>GANDIMAISAMA</td>
+                                    <td>107</td>
+                                    <td>SRIRAM NAGAR</td>
                                     <td>0.00</td>
-                                    <td>130.00</td>
+                                    <td>1000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>ROUTE NO.1</td>
+                                    <td>TS08UF2268</td>
+                                    <td>108</td>
+                                    <td>VEMANA REDDY NAGAR</td>
+                                    <td>0.00</td>
+                                    <td>1000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>ROUTE NO.1</td>
+                                    <td>TS08UF2268</td>
+                                    <td>109</td>
+                                    <td>KRISHNA NAGAR</td>
+                                    <td>0.00</td>
+                                    <td>1000.00</td>
                                 </tr>
                             </table>
                         </div>
@@ -248,4 +240,4 @@ function DefineVehiclesForNewStudents() {
     )
 }
 
-export default DefineVehiclesForNewStudents;
+export default DefineBusStops;
