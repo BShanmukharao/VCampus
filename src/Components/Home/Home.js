@@ -28,6 +28,12 @@ import DefineBusStops from '../StudentManagement/DataEntry/Transportation/Define
 import DefineTypes from '../StudentManagement/DataEntry/Greetings/DefineTypes/DefineTypes'
 import DefineGreetings from '../StudentManagement/DataEntry/Greetings/DefineGreetings/DefineGreetings'
 import CreateGreetings from '../StudentManagement/DataEntry/Greetings/CreateGreetings/CreateGreetings'
+import BonafideCumStudyCertificate from '../StudentManagement/DataEntry/BonafideCumStudyCertificate/BonafideCumStudyCertificate'
+import BonafideCumConductCertificate from '../StudentManagement/DataEntry/BonafideCumConductCertificate/BonafideCumConductCertificate'
+import TransferCertificateAndRecoedSheet from '../StudentManagement/DataEntry/TransferCertificateAndRecoedSheet/TransferCertificateAndRecoedSheet'
+import DefineType from '../StudentManagement/DataEntry/Certificates/DefineType/DefineType'
+import CreateCertificate from '../StudentManagement/DataEntry/Certificates/CreateCertificate/CreateCertificate'
+import DefineCertificate from '../StudentManagement/DataEntry/Certificates/DefineCertificate/DefineCertificate'
 
 const routes = [
     { path: '/', component: HomeScreen},
@@ -52,7 +58,13 @@ const routes = [
     { path: "/DefineBusStops", component: DefineBusStops},
     { path: "/DefineTypes", component: DefineTypes},
     { path: "/DefineGreetings", component: DefineGreetings},
-    { path: "/CreateGreetings", component: CreateGreetings}
+    { path: "/CreateGreetings", component: CreateGreetings},
+    { path: "/BonafideCumStudyCertificate", component: BonafideCumStudyCertificate},
+    { path: "/BonafideCumConductCertificate", component: BonafideCumConductCertificate},
+    { path: "/TransferCertificateAndRecoedSheet", component: TransferCertificateAndRecoedSheet},
+    { path: "/Certificates/DefineType", component: DefineType},
+    { path: "/Certificates/CreateCertificate", component: CreateCertificate},
+    { path: "/Certificates/DefineCertificate", component: DefineCertificate}
 ];
 
 export const Home = () => {

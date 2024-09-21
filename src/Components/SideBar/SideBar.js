@@ -390,29 +390,29 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Types</Link></span>
+                          <span className='text'><Link to={"/home/Certificates/DefineType"} id="side-id" className='each-link'>Define Types</Link></span>
                           
                           </li>
                           <li>
-                          <span className='text'><Link to={""} id="side-id" className='each-link'>Define Certificates</Link></span>
+                          <span className='text'><Link to={"/home/Certificates/DefineCertificate"} id="side-id" className='each-link'>Define Certificates</Link></span>
                           
                           </li>
                           <li>
-                          <span className='text'><Link to={""} id="side-id" className='each-link'>Create Certificates</Link></span>
+                          <span className='text'><Link to={"/home/Certificates/CreateCertificate"} id="side-id" className='each-link'>Create Certificates</Link></span>
                           
                           </li>
                         </ul>
                       </li>
                       <li>
-                      <span className='text'><Link to={""} id="side-id" className='each-link'>Bondified Cum Study Certificate</Link></span>
+                      <span className='text'><Link to={"/home/BonafideCumStudyCertificate"} id="side-id" className='each-link'>Bondified Cum Study Certificate</Link></span>
                       
                       </li>
                       <li>
-                      <span className='text'><Link to={""} id="side-id" className='each-link'>Bondified Cum Conduct Certificate</Link></span>
+                      <span className='text'><Link to={"/home/BonafideCumConductCertificate"} id="side-id" className='each-link'>Bondified Cum Conduct Certificate</Link></span>
                   
                       </li>
                       <li>
-                      <span className='text'><Link to={""} id="side-id" className='each-link'>Transfer Certificate / Record Sheet</Link></span>
+                      <span className='text'><Link to={"/home/TransferCertificateAndRecoedSheet"} id="side-id" className='each-link'>Transfer Certificate / Record Sheet</Link></span>
                       
                       </li>
                       <li>
