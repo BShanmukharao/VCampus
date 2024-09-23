@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './DefineBusStopsOfNewStudents.css'
 
 function DefineBusStopsOfNewStudents() {
+
+
     return (
         <div className='define-bus-stops-of-new-students-bg-container'>
             <h1 className='define-bus-stops-of-new-students-main-heading mb-0'>VEHICLES MASTER</h1>
