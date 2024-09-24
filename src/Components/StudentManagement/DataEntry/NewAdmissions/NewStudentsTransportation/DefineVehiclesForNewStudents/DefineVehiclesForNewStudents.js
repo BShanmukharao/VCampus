@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { Modal } from 'react-bootstrap';
-import { TailSpin } from 'react-loader-spinner';
-
-
+import { TailSpin, Puff, Rings, Oval, ThreeDots, Bars, Circles, Header, Grid } from 'react-loader-spinner';
 import './DefineVehiclesForNewStudents.css'
 
 const apiConstraint = {
@@ -27,54 +25,176 @@ function DefineVehiclesForNewStudents() {
     const [getSchoolData, setSchoolData] = useState([])
     const [getInitialStatus, setInitialStatus] = useState(apiConstraint.initial);
 
+    useEffect(() => { getAreasMastersData() }, [])
+
     const getAreasMastersData = async () => {
         setInitialStatus(apiConstraint.loading)
         try {
-            const data = {
-                "Key": "asctest",
-            };
-
             const Data = await fetch('/VCSync/PostListArea_Mas', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify((data))
+                body: JSON.stringify({
+                    "Key": "ASCTEST",
+                })
             })
             const response = await Data.json();
             const responseList = response.Result;
-            responseList.map((eachObject) => {
-                const newAreaMasterObject = {
-                    areaName: eachObject.AREA,
-                    areaCode: eachObject.AREA_CODE,
-                    fareRs: eachObject.FARE,
-                    fareOne: eachObject.FARE_1,
-                    fareTwo: eachObject.FARE_2,
-                    fareThree: eachObject.FARE_3,
-                    fareFour: eachObject.FARE_4,
-                    fareFive: eachObject.FARE_5,
-                    fareSix: eachObject.FARE_6,
-                    fareSeven: eachObject.FARE_7,
-                    fareEigth: eachObject.FARE_8,
-                    fareNine: eachObject.FARE_9,
-                    fareTen: eachObject.FARE_10,
-                    fareEleven: eachObject.FARE_11,
-                    fareTwelve: eachObject.FARE_12,
-                    id: eachObject.ID,
-                    kilometers: eachObject.KILOMETERS,
-                    totalFee: eachObject.TOTAL_FEE,
-                    updatedDate: eachObject.UPDATED_ON,
-                    isUploaded: eachObject.UPLOADED,
-                    vehicleCode: eachObject.VEHCL_CODE,
-                    vehicleType: eachObject.VEHCL_TYPE
-                }
-                setSchoolData((prevItems) => [...prevItems, newAreaMasterObject]);
-                setInitialStatus(apiConstraint.success);
-            })
+            const updatedList = responseList.map(eachObject => ({
+                areaName: eachObject.AREA,
+                areaCode: eachObject.AREA_CODE,
+                fareRs: eachObject.FARE,
+                fareOne: eachObject.FARE_1,
+                fareTwo: eachObject.FARE_2,
+                fareThree: eachObject.FARE_3,
+                fareFour: eachObject.FARE_4,
+                fareFive: eachObject.FARE_5,
+                fareSix: eachObject.FARE_6,
+                fareSeven: eachObject.FARE_7,
+                fareEigth: eachObject.FARE_8,
+                fareNine: eachObject.FARE_9,
+                fareTen: eachObject.FARE_10,
+                fareEleven: eachObject.FARE_11,
+                fareTwelve: eachObject.FARE_12,
+                id: eachObject.ID,
+                kilometers: eachObject.KILOMETERS,
+                totalFee: eachObject.TOTAL_FEE,
+                updatedDate: eachObject.UPDATED_ON,
+                isUploaded: eachObject.UPLOADED,
+                vehicleCode: eachObject.VEHCL_CODE,
+                vehicleType: eachObject.VEHCL_TYPE
+            }))
+            setSchoolData(updatedList);
+            setInitialStatus(apiConstraint.success);
         } catch (e) {
             setInitialStatus(apiConstraint.failure)
         }
     }
 
-    useEffect(() => { getAreasMastersData() }, [])
+    const addNewItem = async () => {
+        const newId = getSchoolData.length + 1;
+        const formatted = new Date().toISOString().slice(0, 19);
+        const newItem = [
+            {
+                "ID": newId,
+                "vehcl_code": 0,
+                "vehcl_type": "BUS-1",
+                "area_code": 101,
+                "area": "SRIKAKULAM",
+                "kilometers": 0,
+                "fare": 0,
+                "fare_1": 0,
+                "fare_2": 0,
+                "fare_3": 0,
+                "fare_4": 0,
+                "fare_5": 0,
+                "fare_6": 0,
+                "fare_7": 0,
+                "fare_8": 0,
+                "fare_9": 0,
+                "fare_10": 0,
+                "fare_11": 0,
+                "fare_12": 0,
+                "total_fee": 0,
+                "uploaded": true,
+                "updated_on": formatted,
+                "Key": "ASCTEST",
+                "Action": "A"
+            },
+            {
+                "ID": 99,
+                "vehcl_code": 8,
+                "vehcl_type": "VAN-6",
+                "area_code": 224,
+                "area": "ALWAL",
+                "kilometers": 1,
+                "fare": 300,
+                "fare_1": 0,
+                "fare_2": 0,
+                "fare_3": 0,
+                "fare_4": 0,
+                "fare_5": 0,
+                "fare_6": 0,
+                "fare_7": 0,
+                "fare_8": 0,
+                "fare_9": 0,
+                "fare_10": 0,
+                "fare_11": 0,
+                "fare_12": 0,
+                "total_fee": 0,
+                "uploaded": true,
+                "updated_on": "2024-09-24",
+                "Key": "ASCTEST",
+                "Action": "A"
+            },
+            {
+                "ID": 77,
+                "vehcl_code": 9,
+                "vehcl_type": "VAN-5",
+                "area_code": 223,
+                "area": "M E S COLONY",
+                "kilometers": 1,
+                "fare": 500,
+                "fare_1": 3,
+                "fare_2": 0,
+                "fare_3": 0,
+                "fare_4": 0,
+                "fare_5": 0,
+                "fare_6": 0,
+                "fare_7": 0,
+                "fare_8": 0,
+                "fare_9": 0,
+                "fare_10": 0,
+                "fare_11": 0,
+                "fare_12": 0,
+                "total_fee": 0,
+                "uploaded": true,
+                "updated_on": "2024-09-24",
+                "Key": "ASCTEST",
+                "Action": "A"
+            },
+            {
+                "ID": 13,
+                "vehcl_code": 0,
+                "vehcl_type": "BUS-1",
+                "area_code": 101,
+                "area": "SRIKAKULAM",
+                "kilometers": 0,
+                "fare": 0,
+                "fare_1": 0,
+                "fare_2": 0,
+                "fare_3": 0,
+                "fare_4": 0,
+                "fare_5": 0,
+                "fare_6": 0,
+                "fare_7": 0,
+                "fare_8": 0,
+                "fare_9": 0,
+                "fare_10": 0,
+                "fare_11": 0,
+                "fare_12": 0,
+                "total_fee": 0,
+                "uploaded": true,
+                "updated_on": formatted,
+                "Key": "ASCTEST",
+                "Action": "A"
+            }
+        ]
+
+        try {
+            const addedData = await fetch('/VCSync/PostArea_Mas', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(newItem)
+            })
+            if (addedData.ok === true) {
+                console.log("success")
+            }
+        } catch (e) {
+            console.log(e)
+        }
+    }
 
     const getPopUpFormData = (e) => {
         e.preventDefault();
@@ -95,6 +215,7 @@ function DefineVehiclesForNewStudents() {
                         <table className="define-vehicles-for-new-students-table">
                             <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>VEHICLE TYPE</th>
                                     <th>VEHICLE NO</th>
                                     <th>AREA CODE</th>
@@ -106,8 +227,16 @@ function DefineVehiclesForNewStudents() {
                             <tbody>
                                 {getSchoolData.map((eachItem, key) => (
                                     <tr key={key}>
-                                        <td>{eachItem.vehicleType}</td>
-                                        <td>{(eachItem.vehicleType === "BUS-1") && "TS08UF2268" } {(eachItem.vehicleType === "BUS-2") && "AP28TA5436" } {(eachItem.vehicleType === "BUS-3") && "AP28TA3447" } {(eachItem.vehicleType === "BUS-4") && "AP28TA3447" }</td>
+                                        <td>{eachItem.id}</td>
+                                        <td>
+                                            <select className='td-select' defaultValue={eachItem.vehicleType}>
+                                                <option>BUS-1</option>
+                                                <option>BUS-2</option>
+                                                <option>BUS-3</option>
+                                                <option>BUS-4</option>
+                                            </select>
+                                        </td>
+                                        <td>{(eachItem.vehicleType === "BUS-1") && "TS08UF2268"} {(eachItem.vehicleType === "BUS-2") && "AP28TA5436"} {(eachItem.vehicleType === "BUS-3") && "AP28TA3447"} {(eachItem.vehicleType === "BUS-4") && "AP28TA3447"}</td>
                                         <td>{eachItem.areaCode}</td>
                                         <td>{eachItem.areaName}</td>
                                         <td>{eachItem.kilometers}</td>
@@ -122,7 +251,7 @@ function DefineVehiclesForNewStudents() {
                 </div>
                 <div className='define-vehicles-for-new-students-buttons-container pt-4 pb-4'>
                     <div>
-                        <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button' onClick={handleAddPopUpShow}>ADD</button>
+                        <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button' onClick={addNewItem}>ADD</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-secondary' type='submit' onClick={handleUpdatePopUpShow}>EDIT</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button'>DELETE</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-info' type='button'>HELP</button>
@@ -154,11 +283,10 @@ function DefineVehiclesForNewStudents() {
         }
     }
 
-
     return (
         <>
             {renderCards()}
-            <Modal show={showAddPopUp} onHide={handleAddPopUpClose}>
+            <Modal className='sample' show={showAddPopUp} onHide={handleAddPopUpClose}>
                 <form onSubmit={getPopUpFormData}>
                     <Modal.Header closeButton>
                         <Modal.Title className='pop-up-define-vehicles-for-new-students-main-heading'>ADD NEW AREAS MASTER</Modal.Title>
@@ -167,9 +295,10 @@ function DefineVehiclesForNewStudents() {
                         <div className='mb-2'>
                             <label className='pop-up-define-vehicles-for-new-students-label mb-1'>VEHICLE TYPE</label><br />
                             <select className='pop-up-define-vehicles-for-new-students-input-filed' >
-                                <option value="ROUTE NO.1">ROUTE NO.1</option>
-                                <option value="ROUTE NO.2">ROUTE NO.2</option>
-                                <option value="ROUTE NO.3">ROUTE NO.3</option>
+                                <option value="BUS-1">BUS-1</option>
+                                <option value="BUS-2">BUS-2</option>
+                                <option value="BUS-3">BUS-3</option>
+                                <option value="BUS-4">BUS-4</option>
                             </select>
                         </div>
                         <div className='mb-2'>
@@ -198,52 +327,6 @@ function DefineVehiclesForNewStudents() {
                             SAVE
                         </Button>
                         <Button variant="danger" className='define-bus-stops-of-new-students-buttons' onClick={handleAddPopUpClose}>
-                            CANCEL
-                        </Button>
-                    </Modal.Footer>
-                </form>
-            </Modal>
-
-            <Modal show={showUpdatePopUp} onHide={setshowUpdatePopUp}>
-                <form onSubmit={getPopUpFormData}>
-                    <Modal.Header closeButton>
-                        <Modal.Title className='pop-up-define-vehicles-for-new-students-main-heading'>EDIT AREAS MASTER</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <div className='mb-2'>
-                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>VEHICLE TYPE</label><br />
-                            <select className='pop-up-define-vehicles-for-new-students-input-filed' >
-                                <option value="ROUTE NO.1">ROUTE NO.1</option>
-                                <option value="ROUTE NO.2">ROUTE NO.2</option>
-                                <option value="ROUTE NO.3">ROUTE NO.3</option>
-                            </select>
-                        </div>
-                        <div className='mb-2'>
-                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>VEHICLE NO</label><br />
-                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
-                        </div>
-                        <div className='mb-2'>
-                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>AREA CODE</label><br />
-                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
-                        </div>
-                        <div className='mb-2'>
-                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>AREA[STOP] NAME</label><br />
-                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
-                        </div>
-                        <div className='mb-2'>
-                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>KILOMETERS</label><br />
-                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
-                        </div>
-                        <div className='mb-2'>
-                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>FARE-RS</label><br />
-                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
-                        </div>
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="success" type='submit' className='define-bus-stops-of-new-students-buttons' onClick={handleUpdatePopUpClose}>
-                            SAVE
-                        </Button>
-                        <Button variant="danger" className='define-bus-stops-of-new-students-buttons' onClick={handleUpdatePopUpClose}>
                             CANCEL
                         </Button>
                     </Modal.Footer>

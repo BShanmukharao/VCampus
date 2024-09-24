@@ -69,7 +69,7 @@ export const SideBar = () => {
                           </li>
                           <li>
                             <Link to={""}>
-                              <span className='text'>New Students Transaction</span>
+                              <span className='text'>New Students Transportation</span>
                               <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                             </Link>
                             <ul className='forth-nested-menu'>
