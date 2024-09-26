@@ -35,6 +35,20 @@ import DefineType from '../StudentManagement/DataEntry/Certificates/DefineType/D
 import CreateCertificate from '../StudentManagement/DataEntry/Certificates/CreateCertificate/CreateCertificate'
 import DefineCertificate from '../StudentManagement/DataEntry/Certificates/DefineCertificate/DefineCertificate'
 
+
+//AccountManagement Routing Paths
+
+import ReceiptVochers from '../AccountManagement/DataEntry/ReceiptVochers/ReceiptVochers';
+import PaymentVochers from '../AccountManagement/DataEntry//PaymentVochers/PaymentVochers';
+import JournalVochers from '../AccountManagement/DataEntry/JournalVochers/JournalVochers';
+import OpeningBalances from '../AccountManagement/DataEntry/OpeningBalances/OpeningBalances';
+import ChangeBranches from '../AccountManagement/DataEntry/ChangeBranches/ChangeBranches';
+import CharOfAccounts from '../AccountManagement/DataEntry/CharOfAccounts/CharOfAccounts';
+import PartyMaster from '../AccountManagement/DataEntry/PartysMaster/PartysMaster';
+import PartwiseOBS from '../AccountManagement/DataEntry/PartywiseOBS/PartywiseOBS';
+import ManageGroupsSubAndGroups from '../AccountManagement/DataEntry/ManageGroupAndSubGroups/ManageGroupAndSubGroups'
+
+
 const routes = [
     { path: '/', component: HomeScreen},
     { path: '/ApplicationRegistrationFee', component: ApplicationRegistrationFee },
@@ -64,7 +78,18 @@ const routes = [
     { path: "/TransferCertificateAndRecoedSheet", component: TransferCertificateAndRecoedSheet},
     { path: "/Certificates/DefineType", component: DefineType},
     { path: "/Certificates/CreateCertificate", component: CreateCertificate},
-    { path: "/Certificates/DefineCertificate", component: DefineCertificate}
+    { path: "/Certificates/DefineCertificate", component: DefineCertificate},
+
+    // AccountManagement Routing
+    { path: "/AM-ReceiptVouchers", component: ReceiptVochers},
+    { path: "/AM-PaymentVouchers", component: PaymentVochers},
+    { path: "/AM-JournalVouchers", component: JournalVochers},
+    { path: "/AM-OpeningBalances", component: OpeningBalances},
+    { path: "/AM-ChangeBranches", component: ChangeBranches},
+    { path: "/AM-ChartofAccounts", component: CharOfAccounts},
+    { path: "/AM-PartysMasters", component: PartyMaster},
+    { path: "/AM-Partywise-O.Bs", component: PartwiseOBS},
+    { path: "/AM-ManageGroupsSub-Groups", component: ManageGroupsSubAndGroups}
 ];
 
 export const Home = () => {

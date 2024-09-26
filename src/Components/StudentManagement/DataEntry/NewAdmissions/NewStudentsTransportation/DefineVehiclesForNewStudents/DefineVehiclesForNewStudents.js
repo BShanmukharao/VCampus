@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { Modal } from 'react-bootstrap';
-import { TailSpin, Puff, Rings, Oval, ThreeDots, Bars, Circles, Header, Grid } from 'react-loader-spinner';
+import { TailSpin /*Puff, Rings, Oval, ThreeDots, Bars, Circles, Header, Grid*/ } from 'react-loader-spinner';
 import './DefineVehiclesForNewStudents.css'
+
 
 const apiConstraint = {
     initial: 'INITIAL',
@@ -13,8 +14,14 @@ const apiConstraint = {
 
 function DefineVehiclesForNewStudents() {
 
-    const [showAddPopUp, setshowAddPopUp] = useState(false)
-    const [showUpdatePopUp, setshowUpdatePopUp] = useState(false)
+    const [showAddPopUp , setshowAddPopUp] = useState(false)
+    const [showUpdatePopUp , setshowUpdatePopUp] = useState(false)
+    const [getVehicleType , setVehicleType] = useState()
+    const [getVehicleNO , setVehicleNO] = useState()
+    const [getAreaCode , setAreaCode] = useState()
+    const [getAreaName , setAreaName] = useState()
+    const [getKilometers , setKilometers] = useState()
+    const [getFareFee , setFareFee] = useState()
 
     const handleAddPopUpClose = () => setshowAddPopUp(false);
     const handleAddPopUpShow = () => setshowAddPopUp(true);
@@ -70,7 +77,7 @@ function DefineVehiclesForNewStudents() {
         }
     }
 
-    const addNewItem = async () => {
+    /*const addNewItem = async () => {
         const newId = getSchoolData.length + 1;
         const formatted = new Date().toISOString().slice(0, 19);
         const newItem = [
@@ -194,7 +201,7 @@ function DefineVehiclesForNewStudents() {
         } catch (e) {
             console.log(e)
         }
-    }
+    }*/
 
     const getPopUpFormData = (e) => {
         e.preventDefault();
@@ -230,6 +237,7 @@ function DefineVehiclesForNewStudents() {
                                         <td>{eachItem.id}</td>
                                         <td>
                                             <select className='td-select' defaultValue={eachItem.vehicleType}>
+                                                <option>{eachItem.vehicleType}</option>
                                                 <option>BUS-1</option>
                                                 <option>BUS-2</option>
                                                 <option>BUS-3</option>
@@ -251,7 +259,7 @@ function DefineVehiclesForNewStudents() {
                 </div>
                 <div className='define-vehicles-for-new-students-buttons-container pt-4 pb-4'>
                     <div>
-                        <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button' onClick={addNewItem}>ADD</button>
+                        <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button' onClick={handleAddPopUpShow}>ADD</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-secondary' type='submit' onClick={handleUpdatePopUpShow}>EDIT</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button'>DELETE</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-info' type='button'>HELP</button>
@@ -283,11 +291,61 @@ function DefineVehiclesForNewStudents() {
         }
     }
 
+
+    /*
+    <Modal className='add-pop-up-modal-container' show={showAddPopUp} onHide={handleAddPopUpClose}>
+                <form className='add-pop-up-modal-form' onSubmit={getPopUpFormData}>
+                    <Modal.Header closeButton>
+                        <Modal.Title className='pop-up-define-vehicles-for-new-students-main-heading'>ADD NEW AREAS MASTER</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className='mb-2'>
+                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>VEHICLE TYPE</label><br />
+                            <select className='pop-up-define-vehicles-for-new-students-input-filed' >
+                                <option value="BUS-1">BUS-1</option>
+                                <option value="BUS-2">BUS-2</option>
+                                <option value="BUS-3">BUS-3</option>
+                                <option value="BUS-4">BUS-4</option>
+                            </select>
+                        </div>
+                        <div className='mb-2'>
+                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>VEHICLE NO</label><br />
+                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
+                        </div>
+                        <div className='mb-2'>
+                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>AREA CODE</label><br />
+                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
+                        </div>
+                        <div className='mb-2'>
+                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>AREA[STOP] NAME</label><br />
+                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
+                        </div>
+                        <div className='mb-2'>
+                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>KILOMETERS</label><br />
+                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
+                        </div>
+                        <div className='mb-2'>
+                            <label className='pop-up-define-vehicles-for-new-students-label mb-1'>FARE-RS</label><br />
+                            <input type='text' className='pop-up-define-vehicles-for-new-students-input-filed' />
+                        </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="success" type='submit' className='define-bus-stops-of-new-students-buttons' onClick={handleAddPopUpClose}>
+                            SAVE
+                        </Button>
+                        <Button variant="danger" className='define-bus-stops-of-new-students-buttons' onClick={handleAddPopUpClose}>
+                            CANCEL
+                        </Button>
+                    </Modal.Footer>
+                </form>
+            </Modal>
+    */
+
     return (
         <>
             {renderCards()}
-            <Modal className='sample' show={showAddPopUp} onHide={handleAddPopUpClose}>
-                <form onSubmit={getPopUpFormData}>
+            <Modal className='add-pop-up-modal-container' show={showAddPopUp} onHide={handleAddPopUpClose}>
+                <form className='add-pop-up-modal-form' onSubmit={getPopUpFormData}>
                     <Modal.Header closeButton>
                         <Modal.Title className='pop-up-define-vehicles-for-new-students-main-heading'>ADD NEW AREAS MASTER</Modal.Title>
                     </Modal.Header>
