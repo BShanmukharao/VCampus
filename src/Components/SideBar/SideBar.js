@@ -74,10 +74,10 @@ export const SideBar = () => {
                             </Link>
                             <ul className='forth-nested-menu'>
                               <li>
-                                <span className='text'><Link to={"/home/DefineBusStopsOfNewStudents"} id="side-id" className='each-link'>Define Vehicles for New Students</Link></span>
+                                <span className='text'><Link to={"/home/DefineVehiclesForNewStudents"} id="side-id" className='each-link'>Define Vehicles for New Students</Link></span>
                               </li>
                               <li>
-                                <span className='text'><Link to={"/home/DefineVehiclesForNewStudents"} id="side-id" className='each-link'>Define Bus Stops of New Students</Link></span>
+                                <span className='text'><Link to={"/home/DefineBusStopsOfNewStudents"} id="side-id" className='each-link'>Define Bus Stops of New Students</Link></span>
                               </li>
                             </ul>
                           </li>
