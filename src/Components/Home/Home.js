@@ -46,13 +46,16 @@ import ChangeBranches from '../AccountManagement/DataEntry/ChangeBranches/Change
 import CharOfAccounts from '../AccountManagement/DataEntry/CharOfAccounts/CharOfAccounts';
 import PartyMaster from '../AccountManagement/DataEntry/PartysMaster/PartysMaster';
 import PartwiseOBS from '../AccountManagement/DataEntry/PartywiseOBS/PartywiseOBS';
-import ManageGroupsSubAndGroups from '../AccountManagement/DataEntry/ManageGroupAndSubGroups/ManageGroupAndSubGroups'
+import ManageGroupsSubAndGroups from '../AccountManagement/DataEntry/ManageGroupAndSubGroups/ManageGroupAndSubGroups';
+
+//
+import SchoolFeeCollections from '../StudentManagement/DataEntry/FeeCollections/SchoolFeeCollections/SchoolFeeCollections'
 
 
 const routes = [
     { path: '/', component: HomeScreen},
     { path: '/ApplicationRegistrationFee', component: ApplicationRegistrationFee },
-    { path: '/DefineBusStopsOfNewStudents', component: DefineBusStopsOfNewStudents},
+    { path: '/define-bus-stops-of-new-students', component: DefineBusStopsOfNewStudents},
     { path: '/AllotmentOfAdmnNos', component: AllotmentOfAdmnNos },
     { path: '/BooksFeeofNewStudents', component: BooksFeeofNewStudents},
     { path: '/DefineVehiclesForNewStudents', component: DefineVehiclesForNewStudents},
@@ -89,7 +92,10 @@ const routes = [
     { path: "/AM-ChartofAccounts", component: CharOfAccounts},
     { path: "/AM-PartysMasters", component: PartyMaster},
     { path: "/AM-Partywise-O.Bs", component: PartwiseOBS},
-    { path: "/AM-ManageGroupsSub-Groups", component: ManageGroupsSubAndGroups}
+    { path: "/AM-ManageGroupsSub-Groups", component: ManageGroupsSubAndGroups},
+
+    //
+    { path: "/school-fee-collections", component: SchoolFeeCollections}
 ];
 
 export const Home = () => {

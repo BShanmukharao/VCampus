@@ -77,7 +77,7 @@ export const SideBar = () => {
                                 <span className='text'><Link to={"/home/DefineVehiclesForNewStudents"} id="side-id" className='each-link'>Define Vehicles for New Students</Link></span>
                               </li>
                               <li>
-                                <span className='text'><Link to={"/home/DefineBusStopsOfNewStudents"} id="side-id" className='each-link'>Define Bus Stops of New Students</Link></span>
+                                <span className='text'><Link to={"/home/define-bus-stops-of-new-students"} id="side-id" className='each-link'>Define Bus Stops of New Students</Link></span>
                               </li>
                             </ul>
                           </li>
@@ -199,21 +199,21 @@ export const SideBar = () => {
                         </a>
                         <ul className='third-nested-menu'>
                           <li>
-                            <span className='text'><Link to={""} id="side-id" className='each-link'>School Fee Collections</Link></span>
+                            <span className='text'><Link to={"/home/school-fee-collections"} id="side-id" className='each-link'>School Fee Collections</Link></span>
 
                           </li>
                           <li>
-                            <span className='text'><Link to={""} id="side-id" className='each-link'>Miscellaneous Fee Collection</Link></span>
+                            <span className='text'><Link to={"/home/miscellaneous-fee-collection"} id="side-id" className='each-link'>Miscellaneous Fee Collection</Link></span>
 
                           </li>
                           <li>
-                            <span className='text'><Link to={""} id="side-id" className='each-link'>Uniform Stocks Entry</Link></span>
+                            <span className='text'><Link to={"/home/uniform-stocks-entry"} id="side-id" className='each-link'>Uniform Stocks Entry</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={""} id="side-id" className='each-link'>Updated Uniforms Items Stocks Register</Link></span>
+                            <span className='text'><Link to={"/home"} id="side-id" className='each-link'>Updated Uniforms Items Stocks Register</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={""} id="side-id" className='each-link'>General Uniforms Fee Collection</Link></span>
+                            <span className='text'><Link to={"/home/general-uniforms-fee-collection"} id="side-id" className='each-link'>General Uniforms Fee Collection</Link></span>
                           </li>
                           <li>
                             <span className='text'><Link to={""} id="side-id" className='each-link'>Book Store Stocks Entry</Link></span>
