@@ -50,6 +50,11 @@ import ManageGroupsSubAndGroups from '../AccountManagement/DataEntry/ManageGroup
 
 //
 import SchoolFeeCollections from '../StudentManagement/DataEntry/FeeCollections/SchoolFeeCollections/SchoolFeeCollections'
+import MiscellaneousFeeCollection from '../StudentManagement/DataEntry/FeeCollections/MiscellaneousFeeCollection/MiscellaneousFeeCollection'
+import UniformStocksEntry from '../StudentManagement/DataEntry/FeeCollections/UniformStocksEntry/UniformStocksEntry'
+import GeneralUniformsFeeCollection from '../StudentManagement/DataEntry/FeeCollections/GeneralUniformsFeeCollection/GeneralUniformsFeeCollection'
+import BookStoreStocksEntry from '../StudentManagement/DataEntry/FeeCollections/BookStoreStocksEntry/BookStoreStocksEntry'
+import BooksFeeCollection from '../StudentManagement/DataEntry/FeeCollections/BooksFeeCollection/BooksFeeCollection'
 
 
 const routes = [
@@ -95,7 +100,12 @@ const routes = [
     { path: "/AM-ManageGroupsSub-Groups", component: ManageGroupsSubAndGroups},
 
     //
-    { path: "/school-fee-collections", component: SchoolFeeCollections}
+    { path: "/school-fee-collections", component: SchoolFeeCollections},
+    { path: "/miscellaneous-fee-collection", component: MiscellaneousFeeCollection},
+    { path: "/uniform-stocks-entry", component: UniformStocksEntry},
+    { path: "/general-uniforms-fee-collection", component: GeneralUniformsFeeCollection},
+    { path: "/book-store-stocks-entry", component: BookStoreStocksEntry},
+    { path: "/books-fee-collection", component: BooksFeeCollection}
 ];
 
 export const Home = () => {

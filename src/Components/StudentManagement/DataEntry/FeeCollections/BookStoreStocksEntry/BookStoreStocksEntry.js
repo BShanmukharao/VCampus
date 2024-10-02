@@ -1,9 +1,9 @@
 import React, { /*useState*/ } from 'react';
 import { useEffect, useMemo } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './UniformStocksEntry.css'
+import './BookStoreStocksEntry.css'
 
-function UniformStocksEntry() {
+function BookStoreStocksEntry() {
 
     const [getTodayData, setTodayDate] = React.useState('');
     //const [getClassAPIList, setClassAPIList] = useState([]);
@@ -115,5 +115,5 @@ function UniformStocksEntry() {
     )
 }
 
-export default UniformStocksEntry;
+export default BookStoreStocksEntry;
 

@@ -1,10 +1,10 @@
 import React, { /*useState*/ } from 'react';
 import { useEffect, useMemo } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './MiscellaneousFeeCollection.css'
+import './BooksFeeCollection.css'
 
 
-function MiscellaneousFeeCollection() {
+function BooksFeeCollection() {
 
     const [getTodayData, setTodayDate] = React.useState('');
     //const [getClassAPIList, setClassAPIList] = useState([]);
@@ -31,7 +31,7 @@ function MiscellaneousFeeCollection() {
     return (
         <div className='application-registration-bg-container'>
             <form className='application-registration-form-bg-container' onSubmit={getFormData}>
-                <h1 className='application-registration-main-heading mb-0'>MISCELLANEOUS FEE</h1>
+                <h1 className='application-registration-main-heading mb-0'>BOOKS FEE - (REGULAR)</h1>
                 <div className='container-fluid container-with-button pt-2 pb-3'>
                     <div className='row'>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
@@ -39,12 +39,12 @@ function MiscellaneousFeeCollection() {
                             <input type='text' className="input-filed" value={getTodayData} onChange={() => { }} />
                         </div>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
-                            <label className='input-label'>ACTION</label><br />
-                            <input type='text' className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Action is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
+                            <label className='input-label'>MODE</label><br />
+                            <input type='text' className="input-filed" onChange={() => { }} />
                         </div>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
                             <label className='input-label'>ADMN NO</label><br />
-                            <input type='number' min={0} className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Action is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
+                            <input type='number' value="0" className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Action is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
                         </div>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
                             <label className='input-label'>ROLL NO</label><br />
@@ -56,7 +56,7 @@ function MiscellaneousFeeCollection() {
                         </div>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
                             <label className='input-label'>CLASS</label><br />
-                            <input type='text' value="NO" className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Father name is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
+                            <input type='text' className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Father name is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
                         </div>
                         <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
                             <label className='input-label'>SECTION</label><br />
@@ -85,43 +85,44 @@ function MiscellaneousFeeCollection() {
                             <label className='input-label'>RECEIPT DT</label><br />
                             <input type='text' className="input-filed" value={getTodayData} onChange={() => { }} />
                         </div>
+                        <div className='col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 label-and-input'>
+                            <label className='input-label'>CONCES:</label><br />
+                            <input type='number' value="0" className="input-filed" required onInvalid={(e) => (e.target.setCustomValidity('Guardian is required'))} onInput={(e) => (e.target.setCustomValidity(''))} />
+                        </div>
                     </div>
                 </div>
             </form>
             <div className='define-bus-stops-of-new-students-bg-container mt-4'>
-                <h1 className='define-bus-stops-of-new-students-main-heading mb-0'>MISCELLANEOUS FEE TABLE</h1>
+                <h1 className='define-bus-stops-of-new-students-main-heading mb-0'>BOOKS FEE TABLE</h1>
                 <div className='container-fluid pt-2'>
                     <div className='row'>
                         <div className='col-xs-12 define-bus-stops-of-new-students-table-container mb-3'>
                             <table className="define-bus-stops-of-new-students-table">
                                 <tr>
                                     <th>SELECT</th>
-                                    <th>MISCELLANEOUS FEE PARTICULARS</th>
+                                    <th>DESCRIPTION</th>
+                                    <th>RATE</th>
+                                    <th>QTY</th>
                                     <th>AMOUNT</th>
+                                    <th>CONCESS</th>
+                                    <th>NET AMOUNT</th>
                                 </tr>
                                 <tr>
-                                    <td><input type='checkbox' /></td>
-                                    <td>COMPUTER BOOK 1-3</td>
-                                    <td>60.00</td>
-                                </tr>
-                                <tr>
-                                    <td><input type='checkbox' /></td>
-                                    <td>COMPUTER BOOK 4-6</td>
-                                    <td>80.00</td>
-                                </tr>
-                                <tr>
-                                    <td><input type='checkbox' /></td>
-                                    <td>COMPUTER BOOK 7-8</td>
-                                    <td>100.00</td>
-                                </tr>
-                                <tr>
-                                    <td><input type='checkbox' /></td>
-                                    <td>COMPUTER BOOK 9-10</td>
-                                    <td>125.00</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 <tfoot>
                                     <th></th>
-                                    <th>TOTAL AMOUNT TO COLLECT</th>
+                                    <th>TOTALS:</th>
+                                    <th></th>
+                                    <th>0</th>
+                                    <th>0.00</th>
+                                    <th>0.00</th>
                                     <th>0.00</th>
                                 </tfoot>
                             </table>
@@ -136,7 +137,7 @@ function MiscellaneousFeeCollection() {
                             <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button'>NEW</button>
                             <button className='define-bus-stops-of-new-students-buttons btn btn-secondary' type='submit'>EDIT</button>
                             <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button'>DELETE</button>
-                            <button className='define-bus-stops-of-new-students-buttons btn btn-success' type='button'>SAVE</button>
+                            <button className='define-bus-stops-of-new-students-buttons btn btn-success' type='button'>PRINT</button>
                             <button className='define-bus-stops-of-new-students-buttons btn btn-info' type='button'>HELP</button>
                         </div>
                     </div>
@@ -146,5 +147,5 @@ function MiscellaneousFeeCollection() {
     )
 }
 
-export default MiscellaneousFeeCollection;
+export default BooksFeeCollection;
 

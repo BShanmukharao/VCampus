@@ -216,13 +216,13 @@ export const SideBar = () => {
                             <span className='text'><Link to={"/home/general-uniforms-fee-collection"} id="side-id" className='each-link'>General Uniforms Fee Collection</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={""} id="side-id" className='each-link'>Book Store Stocks Entry</Link></span>
+                            <span className='text'><Link to={"/home/book-store-stocks-entry"} id="side-id" className='each-link'>Book Store Stocks Entry</Link></span>
                           </li>
                           <li>
                             <span className='text'><Link to={""} id="side-id" className='each-link'>Updated Book Store Stocks Register</Link></span>
                           </li>
                           <li>
-                            <span className='text'><Link to={""} id="side-id" className='each-link'>Books Fee Collection</Link></span>
+                            <span className='text'><Link to={"/home/books-fee-collection"} id="side-id" className='each-link'>Books Fee Collection</Link></span>
                           </li>
                           <li>
                             <span className='text'><Link to={""} id="side-id" className='each-link'>Edit Current Year Fee Opening Dues</Link></span>

@@ -270,7 +270,6 @@ function SchoolFeeCollections() {
                         <button className='define-bus-stops-of-new-students-buttons btn btn-secondary' type='submit'>EDIT</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button'>DELETE</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-success' type='button'>SAVE</button>
-                        <button className='define-bus-stops-of-new-students-buttons btn btn-warning' type='button'>CANCEL</button>
                         <button className='define-bus-stops-of-new-students-buttons btn btn-info' type='button'>HELP</button>
                     </div>
                 </div>
