@@ -1,103 +1,95 @@
 import $ from 'jquery';
 
 //first-nested-menu
-$(function () {
+$(function () { 
 
-  //$(".menu ul li ul").hide();     // initially hide all tags inside main-menu
   $(".menu > ul > li > a").on("click", function (event) {
 
     event.preventDefault();
 
-    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+    $(this).find('.arrow').toggleClass("rotate"); 
 
+    $('.menu > ul > li > a > .arrow').not($(this).find('.arrow')).removeClass("rotate");
 
-    $('.menu > ul > li > a > .arrow').not($(this).find('.arrow')).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+    $(this).next("ul").slideToggle();
 
-
-    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
-
-
-    $(".menu ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
+    $(".menu ul ul").not($(this).next("ul")).slideUp();
   });
+
 });
 
 //second-nested-menu 
 $(function () {
+
   $(".menu > ul > li > ul > li > a").on("click", function (e) {
 
     e.preventDefault();
 
-    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+    $(this).find('.arrow').toggleClass("rotate");     
 
+    $('.menu > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
 
-    $('.menu > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");    // Remove the "rotate" class from all other arrows
+    $(this).next("ul").slideToggle();
 
-
-    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
-
-
-    $(".menu ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
+    $(".menu ul ul ul").not($(this).next("ul")).slideUp();
   });
+
 });
 
 //third-nested-menu
 $(function () {
+
   $(".menu > ul > li > ul > li > ul > li > a").on("click", function (e) {
 
     e.preventDefault();
 
+    $(this).find('.arrow').toggleClass("rotate");
 
-    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+    $('.menu > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
 
+    $(this).next("ul").slideToggle();
 
-    $('.menu > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");    // Remove the "rotate" class from all other arrows
-
-
-    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
-
-
-    $(".menu ul ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
+    $(".menu ul ul ul ul").not($(this).next("ul")).slideUp();
   });
+
 });
 
 //forth-nested-menu
 $(function () {
+
   $(".menu > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
 
     e.preventDefault();
 
+    $(this).find('.arrow').toggleClass("rotate");
 
-    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+    $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
 
+    $(this).next("ul").slideToggle();
 
-    $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");    // Remove the "rotate" class from all other arrows
-
-
-    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
-
-
-    $(".menu ul ul ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
+    $(".menu ul ul ul ul ul").not($(this).next("ul")).slideUp();
   });
+
 });
 
 //fifth-nested-menu
 $(function () {
+
   $(".menu > ul > li > ul > li > ul > li > ul > li > ul > li > a").on("click", function (e) {
 
     e.preventDefault();
 
+    $(this).find('.arrow').toggleClass("rotate");
 
-    $(this).find('.arrow').toggleClass("rotate");     // Toggle the "rotate" class on the clicked arrow
+    $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
 
+    $(this).next("ul").slideToggle();
 
-    $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");    // Remove the "rotate" class from all other arrows
-
-
-    $(this).next("ul").slideToggle();     // Toggle the "ul" items on the clicked menu
-
-    $(".menu ul ul ul ul ul ul").not($(this).next("ul")).slideUp();     // Remove the "ul" items from all other menus
+    $(".menu ul ul ul ul ul ul").not($(this).next("ul")).slideUp();
   });
+
 });
+
 
 $(function () {
 
@@ -111,22 +103,21 @@ $(function () {
     $(sidebarId).toggleClass('addAboveStyleClass');
   });
 
-
   $(belowArrowId).on('click', function (e) {
     e.preventDefault();
     $(sidebarId).toggleClass('addBelowStylesClass');
   });
-
 
   $(closeSideBarId).on('click', function (e) {
     e.preventDefault();
     $(sidebarId).removeClass("addBelowStylesClass");
   });
 
-
 })
 
+
 $(function () {
+
   var windowsize = $(window).width();
   const sidebarId = document.getElementById('SideBar-Id');
   if (windowsize <= 992) {
@@ -140,17 +131,6 @@ $(function () {
       })
     });
   }
+
 })
-
-/*$(function () {
-  var windowsize = $(window).width();
-  const sidebarId = $('#SideBar-Id');
-
-  $(function () {
-    $(this).on("click",function (e){
-      var rootElement = $(this).closest('#SideBar-Id');
-      console.log(rootElement);
-    })
-    });
-})*/
 

@@ -33,10 +33,13 @@ function DefineVehiclesForNewStudents() {
 
     useEffect(() => { getAreasMastersData() }, [])
 
+    //https://visualcampus.in/API/api/VCSync/PostListArea_Mas
+    //"proxy": "https://visualcampus.in",
+
     const getAreasMastersData = async () => {
         setInitialStatus(apiConstraint.loading)
         try {
-            const Data = await fetch('/VCSync/PostListArea_Mas', {
+            const Data = await fetch('/API/api/VCSync/PostListArea_Mas', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -217,7 +220,7 @@ function DefineVehiclesForNewStudents() {
 
             try {
                 setInitialStatus(apiConstraint.loading)
-                const addedData = await fetch('/VCSync/PostArea_Mas', {
+                const addedData = await fetch('/API/api/VCSync/PostArea_Mas', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

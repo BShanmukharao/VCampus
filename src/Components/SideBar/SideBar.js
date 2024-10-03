@@ -1,12 +1,14 @@
-import './SideBarJquery'
-import $ from "jquery"
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
 import { toggleValue } from '../Redux/ToggleSideBarSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassStart, faCommentDots, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassStart, faCommentDots, faXmark, faTicket } from '@fortawesome/free-solid-svg-icons';
+import $ from 'jquery';
+import './SideBarJquery.js'
+import './SideBar.css'
 
-
+//id='SideBar-Id', id="side-id"
+  
 export const SideBar = () => {
 
   const dispatch = useDispatch()
@@ -1898,6 +1900,336 @@ export const SideBar = () => {
               </li>
               <li>
                 <Link to={""}>
+                  <FontAwesomeIcon icon={faTicket} className='icon' />
+                  <span className='text'>New Admissions</span>
+                  <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                </Link>
+                <ul className='first-nested-menu'>
+                  <li>
+                    <a href='#'>
+                      <span className='text'>Data Entry</span>
+                      <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                    </a>
+                    <ul className='second-nested-menu'>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employees Master</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Cumulative I P R</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employees Loans Master</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>L.I.C Policies Master</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Attendance Recording</span>
+                          <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                        </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Monthly Attendance</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>View Month-Wise Attendance</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employees Banks</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <span className='text'>Process</span>
+                      <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                    </a>
+                    <ul className='second-nested-menu'>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Process Payroll</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Update Loans Master File</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Update Cumulative Master</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <span className='text'>Reports</span>
+                      <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                    </a>
+                    <ul className='second-nested-menu'>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Cash List</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Bank List</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employee Playslips</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Payroll Reports</span>
+                          <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                        </a>
+                        <ul className='third-nested-menu'>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Attendance Register</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Current Month Attendance Register</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Salary Statement</span>
+                              <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                            </a>
+                            <ul className='forth-nested-menu'>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Current Month </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href='#'>
+                                  <span className='text'>Previous Months</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>L.I.C Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>E.P.F Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>P.F Return Form-3A</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>P.F Return Form-6A</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>E.S.I Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Profession Tax Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Profession Tax Return</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Income Tax Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Other Earnings / Deductions Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>MSc. Earnings / Deductions Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Loss of Pay Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Leaves Encashment Report</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Employee Loans</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Payroll Journal Voucher (J.V)</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Address Labels</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Cumulative Payroll</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href='#'>
+                              <span className='text'>Gratuity / Leave Encashment Report</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Salary Certificate</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employees' Master List</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Carry-over Rs. Current Month List</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Carry-over Rs. Cumulative List</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employees Strength Report</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employees Leaves Report</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employees Leaves Balance Report</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Employees Absents Rate Report</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <span className='text'>Enquiry</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <span className='text'>Super User Settings</span>
+                      <FontAwesomeIcon icon={faCaretRight} className='arrow' />
+                    </a>
+                    <ul className='second-nested-menu'>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Payroll Settings</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Attendance Rules</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Profession Tax Table</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Define Pay Groups</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Define Service Types</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Define Pay Categories</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Define Salutations</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Net Salary Rounds Off</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Payroll A/C Heads</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='#'>
+                          <span className='text'>Payroll to Accounts</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link to={""}>
                   <FontAwesomeIcon icon={faUserTie} className='icon' />
                   <span className='text'>Employees Management</span>
                   <FontAwesomeIcon icon={faCaretRight} className='arrow' />
@@ -3155,5 +3487,5 @@ export const SideBar = () => {
       </div>
     </div>
   );
-};
 
+};
