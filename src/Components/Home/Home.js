@@ -58,60 +58,60 @@ import BooksFeeCollection from '../StudentManagement/DataEntry/FeeCollections/Bo
 
 
 const routes = [
-    { path: '/', component: HomeScreen},
+    { path: '/', component: HomeScreen },
     { path: '/ApplicationRegistrationFee', component: ApplicationRegistrationFee },
-    { path: '/define-bus-stops-of-new-students', component: DefineBusStopsOfNewStudents},
+    { path: '/define-bus-stops-of-new-students', component: DefineBusStopsOfNewStudents },
     { path: '/AllotmentOfAdmnNos', component: AllotmentOfAdmnNos },
-    { path: '/BooksFeeofNewStudents', component: BooksFeeofNewStudents},
-    { path: '/DefineVehiclesForNewStudents', component: DefineVehiclesForNewStudents},
-    { path: '/CreateMarksData', component: CreateMarksData},
-    { path: "/EnterOrEditMarks", component: EnterOrEditMarks},
-    { path: "/DeleteMarksData", component: DeleteMarksData},
-    { path: "/RecreateMarksData", component: RecreateMarksData},
-    { path: "/BackUpMarksData", component: BackUpMarksData},
-    { path: "/ClassFacultiesList", component: ClassFacultiesList},
-    { path: "/SubjectWiseFaculties", component: SubjectWiseFaculties},
-    { path: "/DefineRemarksGroup", component: DefineRemarksGroup},
-    { path: "/DefineRemarks", component: DefineRemarks},
-    { path: "/DefineAutoRemarks", component: DefineAutoRemarks},
-    { path: "/MonthlyAttendance", component: MonthlyAttendance},
-    { path: "/SetWorkingDays", component: SetWorkingDays},
-    { path: "/DefineVehicles", component: DefineVehicles},
-    { path: "/DefineBusStops", component: DefineBusStops},
-    { path: "/DefineTypes", component: DefineTypes},
-    { path: "/DefineGreetings", component: DefineGreetings},
-    { path: "/CreateGreetings", component: CreateGreetings},
-    { path: "/BonafideCumStudyCertificate", component: BonafideCumStudyCertificate},
-    { path: "/BonafideCumConductCertificate", component: BonafideCumConductCertificate},
-    { path: "/TransferCertificateAndRecoedSheet", component: TransferCertificateAndRecoedSheet},
-    { path: "/Certificates/DefineType", component: DefineType},
-    { path: "/Certificates/CreateCertificate", component: CreateCertificate},
-    { path: "/Certificates/DefineCertificate", component: DefineCertificate},
+    { path: '/BooksFeeofNewStudents', component: BooksFeeofNewStudents },
+    { path: '/DefineVehiclesForNewStudents', component: DefineVehiclesForNewStudents },
+    { path: '/CreateMarksData', component: CreateMarksData },
+    { path: "/EnterOrEditMarks", component: EnterOrEditMarks },
+    { path: "/DeleteMarksData", component: DeleteMarksData },
+    { path: "/RecreateMarksData", component: RecreateMarksData },
+    { path: "/BackUpMarksData", component: BackUpMarksData },
+    { path: "/ClassFacultiesList", component: ClassFacultiesList },
+    { path: "/SubjectWiseFaculties", component: SubjectWiseFaculties },
+    { path: "/DefineRemarksGroup", component: DefineRemarksGroup },
+    { path: "/DefineRemarks", component: DefineRemarks },
+    { path: "/DefineAutoRemarks", component: DefineAutoRemarks },
+    { path: "/MonthlyAttendance", component: MonthlyAttendance },
+    { path: "/SetWorkingDays", component: SetWorkingDays },
+    { path: "/DefineVehicles", component: DefineVehicles },
+    { path: "/DefineBusStops", component: DefineBusStops },
+    { path: "/DefineTypes", component: DefineTypes },
+    { path: "/DefineGreetings", component: DefineGreetings },
+    { path: "/CreateGreetings", component: CreateGreetings },
+    { path: "/BonafideCumStudyCertificate", component: BonafideCumStudyCertificate },
+    { path: "/BonafideCumConductCertificate", component: BonafideCumConductCertificate },
+    { path: "/TransferCertificateAndRecoedSheet", component: TransferCertificateAndRecoedSheet },
+    { path: "/Certificates/DefineType", component: DefineType },
+    { path: "/Certificates/CreateCertificate", component: CreateCertificate },
+    { path: "/Certificates/DefineCertificate", component: DefineCertificate },
 
     // AccountManagement Routing
-    { path: "/AM-ReceiptVouchers", component: ReceiptVochers},
-    { path: "/AM-PaymentVouchers", component: PaymentVochers},
-    { path: "/AM-JournalVouchers", component: JournalVochers},
-    { path: "/AM-OpeningBalances", component: OpeningBalances},
-    { path: "/AM-ChangeBranches", component: ChangeBranches},
-    { path: "/AM-ChartofAccounts", component: CharOfAccounts},
-    { path: "/AM-PartysMasters", component: PartyMaster},
-    { path: "/AM-Partywise-O.Bs", component: PartwiseOBS},
-    { path: "/AM-ManageGroupsSub-Groups", component: ManageGroupsSubAndGroups},
+    { path: "/AM-ReceiptVouchers", component: ReceiptVochers },
+    { path: "/AM-PaymentVouchers", component: PaymentVochers },
+    { path: "/AM-JournalVouchers", component: JournalVochers },
+    { path: "/AM-OpeningBalances", component: OpeningBalances },
+    { path: "/AM-ChangeBranches", component: ChangeBranches },
+    { path: "/AM-ChartofAccounts", component: CharOfAccounts },
+    { path: "/AM-PartysMasters", component: PartyMaster },
+    { path: "/AM-Partywise-O.Bs", component: PartwiseOBS },
+    { path: "/AM-ManageGroupsSub-Groups", component: ManageGroupsSubAndGroups },
 
     //
-    { path: "/school-fee-collections", component: SchoolFeeCollections},
-    { path: "/miscellaneous-fee-collection", component: MiscellaneousFeeCollection},
-    { path: "/uniform-stocks-entry", component: UniformStocksEntry},
-    { path: "/general-uniforms-fee-collection", component: GeneralUniformsFeeCollection},
-    { path: "/book-store-stocks-entry", component: BookStoreStocksEntry},
-    { path: "/books-fee-collection", component: BooksFeeCollection}
+    { path: "/school-fee-collections", component: SchoolFeeCollections },
+    { path: "/miscellaneous-fee-collection", component: MiscellaneousFeeCollection },
+    { path: "/uniform-stocks-entry", component: UniformStocksEntry },
+    { path: "/general-uniforms-fee-collection", component: GeneralUniformsFeeCollection },
+    { path: "/book-store-stocks-entry", component: BookStoreStocksEntry },
+    { path: "/books-fee-collection", component: BooksFeeCollection }
 ];
 
 export const Home = () => {
 
     return (
-        <div className='home-bg-container' refresh="true">
+        <div className='home-bg-container'>
             <SideBar />
             <div className='header-content-bg-container'>
                 <Header />

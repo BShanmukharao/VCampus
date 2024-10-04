@@ -1,17 +1,111 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from "react";
+import $ from 'jquery';
 import { useDispatch } from 'react-redux'
 import { toggleValue } from '../Redux/ToggleSideBarSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassStart, faCommentDots, faXmark, faTicket } from '@fortawesome/free-solid-svg-icons';
-import $ from 'jquery';
-import './SideBarJquery.js'
+import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassStart, faCommentDots, faXmark, faTicket, faRefresh } from '@fortawesome/free-solid-svg-icons';
+//import './SideBarJquery.js'
 import './SideBar.css'
 
-//id='SideBar-Id', id="side-id"
-  
 export const SideBar = () => {
 
   const dispatch = useDispatch()
+
+  function reinitializeJQuery() {
+    $(function () {
+      $(".menu > ul > li > a").off("click").on("click", function (event) {
+        event.preventDefault();
+        $(this).find('.arrow').toggleClass("rotate");
+        $('.menu > ul > li > a > .arrow').not($(this).find('.arrow')).removeClass("rotate");
+        $(this).next("ul").slideToggle();
+        $(".menu ul ul").not($(this).next("ul")).slideUp();
+      });
+    });
+
+    $(function () {
+      $(".menu > ul > li > ul > li > a").off("click").on("click", function (event) {
+        event.preventDefault();
+        $(this).find('.arrow').toggleClass("rotate");     
+        $('.menu > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $(this).next("ul").slideToggle();
+        $(".menu ul ul ul").not($(this).next("ul")).slideUp();
+      }); 
+    });
+
+    $(function () {
+      $(".menu > ul > li > ul > li > ul > li > a").off("click").on("click", function (event) {
+        event.preventDefault();
+        $(this).find('.arrow').toggleClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $(this).next("ul").slideToggle();
+        $(".menu ul ul ul ul").not($(this).next("ul")).slideUp();
+      });
+    });
+
+    $(function () {
+      $(".menu > ul > li > ul > li > ul > li > ul > li > a").off("click").on("click", function (e) {
+        e.preventDefault();
+        $(this).find('.arrow').toggleClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $(this).next("ul").slideToggle();
+        $(".menu ul ul ul ul ul").not($(this).next("ul")).slideUp();
+      });
+    });
+
+    $(function () {
+      $(".menu > ul > li > ul > li > ul > li > ul > li > ul > li > a").off("click").on("click", function (e) {
+        e.preventDefault(); 
+        $(this).find('.arrow').toggleClass("rotate");  
+        $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");  
+        $(this).next("ul").slideToggle();
+        $(".menu ul ul ul ul ul ul").not($(this).next("ul")).slideUp();
+      });
+    });
+
+    $(function () {
+      const aboveArrowId = document.getElementById("Header-Above-Arrow-Id");
+      const belowArrowId = document.getElementById('Header-Below-Arrow-Id');
+      const closeSideBarId = document.getElementById("close-sidebar-id");
+      const sidebarId = document.getElementById('SideBar-Id');
+    
+      $(aboveArrowId).off("click").on("click", function (event) {
+        event.preventDefault();
+        $(sidebarId).toggleClass('addAboveStyleClass');
+      });
+    
+      $(belowArrowId).off("click").on('click', function (event) {
+        event.preventDefault();
+        $(sidebarId).toggleClass('addBelowStylesClass');
+      });
+    
+      $(closeSideBarId).off("click").on('click', function (event) {
+        event.preventDefault();
+        $(sidebarId).removeClass("addBelowStylesClass");
+      });
+    })
+
+    $(function () {
+      var windowsize = $(window).width();
+      const sidebarId = document.getElementById('SideBar-Id');
+      if (windowsize <= 992) {
+        $(function () {
+          $(this).on("click", function (e) {
+            var rootElement = e.target.id
+            if(rootElement === "side-id") {
+              e.preventDefault();
+              $(sidebarId).removeClass("addBelowStylesClass");
+            }
+          })
+        });
+      }
+    
+    })
+  }
+
+  useEffect(() => {
+    reinitializeJQuery()
+  }, [])
 
   return (
     <div className='bg-container' id='SideBar-Id'>
