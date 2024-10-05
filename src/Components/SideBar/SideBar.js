@@ -4,6 +4,7 @@ import $ from 'jquery';
 import { useDispatch } from 'react-redux'
 import { toggleValue } from '../Redux/ToggleSideBarSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { faCaretRight, faUsers, faUserTie, faFileInvoice, faBook, faHourglassStart, faCommentDots, faXmark, faTicket, faRefresh } from '@fortawesome/free-solid-svg-icons';
 //import './SideBarJquery.js'
 import './SideBar.css'
@@ -12,52 +13,79 @@ export const SideBar = () => {
 
   const dispatch = useDispatch()
 
+  const homeIcon = () => {
+    $(this).find('.arrow').toggleClass("rotate");
+    $('.menu > ul > li > a .arrow').not($(this).find('.arrow')).removeClass("rotate");
+    $('.menu > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+    $('.menu > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+    $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+    $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+    $(this).next("ul").slideToggle();
+    $(".menu ul ul").not($(this).next("ul")).slideUp();
+  }
+
   function reinitializeJQuery() {
+
+    // First level menu
     $(function () {
       $(".menu > ul > li > a").off("click").on("click", function (event) {
         event.preventDefault();
         $(this).find('.arrow').toggleClass("rotate");
-        $('.menu > ul > li > a > .arrow').not($(this).find('.arrow')).removeClass("rotate");
+        $('.menu > ul > li > a .arrow').not($(this).find('.arrow')).removeClass("rotate");
+        $('.menu > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
         $(this).next("ul").slideToggle();
-        $(".menu ul ul").not($(this).next("ul")).slideUp();
+        $(".menu ul ul").not($(this).next("ul")).slideUp(); 
       });
     });
 
+    // Second level menu
     $(function () {
       $(".menu > ul > li > ul > li > a").off("click").on("click", function (event) {
         event.preventDefault();
-        $(this).find('.arrow').toggleClass("rotate");     
+        $(this).find('.arrow').toggleClass("rotate");
         $('.menu > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
         $(this).next("ul").slideToggle();
         $(".menu ul ul ul").not($(this).next("ul")).slideUp();
-      }); 
+      });
     });
 
+    // Third level menu 
     $(function () {
       $(".menu > ul > li > ul > li > ul > li > a").off("click").on("click", function (event) {
         event.preventDefault();
         $(this).find('.arrow').toggleClass("rotate");
         $('.menu > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
         $(this).next("ul").slideToggle();
         $(".menu ul ul ul ul").not($(this).next("ul")).slideUp();
       });
     });
 
+    // Forth level menu 
     $(function () {
       $(".menu > ul > li > ul > li > ul > li > ul > li > a").off("click").on("click", function (e) {
         e.preventDefault();
         $(this).find('.arrow').toggleClass("rotate");
         $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
         $(this).next("ul").slideToggle();
         $(".menu ul ul ul ul ul").not($(this).next("ul")).slideUp();
       });
     });
 
+    // Fifth level menu 
     $(function () {
       $(".menu > ul > li > ul > li > ul > li > ul > li > ul > li > a").off("click").on("click", function (e) {
-        e.preventDefault(); 
-        $(this).find('.arrow').toggleClass("rotate");  
-        $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");  
+        e.preventDefault();
+        $(this).find('.arrow').toggleClass("rotate");
+        $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
         $(this).next("ul").slideToggle();
         $(".menu ul ul ul ul ul ul").not($(this).next("ul")).slideUp();
       });
@@ -68,17 +96,17 @@ export const SideBar = () => {
       const belowArrowId = document.getElementById('Header-Below-Arrow-Id');
       const closeSideBarId = document.getElementById("close-sidebar-id");
       const sidebarId = document.getElementById('SideBar-Id');
-    
+
       $(aboveArrowId).off("click").on("click", function (event) {
         event.preventDefault();
         $(sidebarId).toggleClass('addAboveStyleClass');
       });
-    
+
       $(belowArrowId).off("click").on('click', function (event) {
         event.preventDefault();
         $(sidebarId).toggleClass('addBelowStylesClass');
       });
-    
+
       $(closeSideBarId).off("click").on('click', function (event) {
         event.preventDefault();
         $(sidebarId).removeClass("addBelowStylesClass");
@@ -92,14 +120,14 @@ export const SideBar = () => {
         $(function () {
           $(this).on("click", function (e) {
             var rootElement = e.target.id
-            if(rootElement === "side-id") {
+            if (rootElement === "side-id") {
               e.preventDefault();
               $(sidebarId).removeClass("addBelowStylesClass");
             }
           })
         });
       }
-    
+
     })
   }
 
@@ -112,12 +140,12 @@ export const SideBar = () => {
       <div className='sidebar' id="side-id">
         <div className='head'>
           <div>
-            <Link to="/home" className='logout-router-link'>
+            <Link to="/home" onClick={homeIcon} className='logout-router-link'>
               <img src="https://c8.alamy.com/comp/2E1AKBG/initial-circle-vc-letter-logo-creative-typography-vector-template-creative-letter-vc-logo-vector-2E1AKBG.jpg" alt='logo' className='sidebar-logo' />
             </Link>
           </div>
           <div className='user-details'>
-            <Link to="/home" className='logout-router-link'>
+            <Link to="/home" onClick={homeIcon} className='logout-router-link'>
               <p className='title'>Visual Campus</p>
             </Link>
           </div>
@@ -127,20 +155,20 @@ export const SideBar = () => {
           <div className='menu'>
             <ul>
               <li>
-                <Link to={""}>
+                <Link>
                   <FontAwesomeIcon icon={faUsers} className='icon' />
                   <span className='text'>Students Management</span>
                   <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                 </Link>
                 <ul className='first-nested-menu'>
                   <li>
-                    <Link to={""}>
+                    <Link>
                       <span className='text'>Data Entry</span>
                       <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                     </Link>
                     <ul className='second-nested-menu'>
                       <li>
-                        <Link to={""}>
+                        <Link>
                           <span className='text'>New Admissions</span>
                           <FontAwesomeIcon icon={faCaretRight} className='arrow' />
                         </Link>
@@ -202,7 +230,6 @@ export const SideBar = () => {
                         <ul className='third-nested-menu'>
                           <li>
                             <span className='text'><Link to={""} id="side-id" className='each-link'>Regular Student's Master Data</Link></span>
-
                           </li>
                           <li>
                             <span className='text'><Link to={""} id="side-id" className='each-link'>view Regular Students Master Data</Link></span>
@@ -549,10 +576,10 @@ export const SideBar = () => {
                     </ul>
                   </li>
                   <li>
-                    <a href='#'>
+                    <Link to={""}>
                       <span className='text'>Reports</span>
                       <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                    </a>
+                    </Link>
                     <ul className='second-nested-menu'>
                       <li>
                         <a href='#'>
@@ -1529,10 +1556,10 @@ export const SideBar = () => {
                     </ul>
                   </li>
                   <li>
-                    <a href='#'>
+                    <Link to={""}>
                       <span className='text'>Enquiry</span>
                       <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                    </a>
+                    </Link>
                     <ul className='second-nested-menu'>
                       <li>
                         <a href='#'>
@@ -1557,10 +1584,10 @@ export const SideBar = () => {
                     </ul>
                   </li>
                   <li>
-                    <a href='#'>
+                    <Link to={""}>
                       <span className='text'>Super User Settings</span>
                       <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                    </a>
+                    </Link>
                     <ul className='second-nested-menu'>
                       <li>
                         <a href='#'>
@@ -1924,10 +1951,10 @@ export const SideBar = () => {
                     </ul>
                   </li>
                   <li>
-                    <a href='#'>
+                    <Link to={""}>
                       <span className='text'>Academic Year</span>
                       <FontAwesomeIcon icon={faCaretRight} className='arrow' />
-                    </a>
+                    </Link>
                     <ul className='second-nested-menu'>
                       <li>
                         <span className='text'><Link to={""} id="side-id" className='each-link'>Set Academic Year</Link></span>
