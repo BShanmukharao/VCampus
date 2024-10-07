@@ -33,30 +33,36 @@ function DefineVehiclesForNewStudents() {
     const [getFilteredData, setFilteredData] = useState()
     const [getInitialStatus, setInitialStatus] = useState(apiConstraint.initial);
 
-    useEffect(() => { getAreasMastersData() }, [])
+    useEffect(() => {
+        getAreasMastersData()
+    }, [])
 
-    const searchForUserEnteredData = (event) => {
-        const userEnteredData = event.target.value
-        if ((event.key === 'Enter') || (event.key === undefined)) {
-
-            const filteredData = getSchoolData.filter(item =>
-                item.id.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
-                item.vehicleType.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
-                item.areaCode.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
-                item.areaName.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
-                item.kilometers.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
-                item.totalFee.toString().toLowerCase().includes(userEnteredData.toLowerCase())
-            );
-            setFilteredData(filteredData)
+    const setFilterDataAfterEnteredByEnterKey = (event) => {
+        if ((event.key === 'Enter')) {
+            searchForUserEnteredData();
         }
+    }
+
+    const setFilterDataAfterEnteredBySearchIcon = () => {
+        searchForUserEnteredData();
+    }
+
+    const searchForUserEnteredData = () => {
+        const userEnteredData = getUserEnteredData
+        const filteredData = getSchoolData.filter(item =>
+            item.id.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
+            item.vehicleType.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
+            item.areaCode.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
+            item.areaName.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
+            item.kilometers.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
+            item.totalFee.toString().toLowerCase().includes(userEnteredData.toLowerCase())
+        );
+        setFilteredData(filteredData)
     }
 
     const setUserEnteredDataToState = (event) => {
         setUserEnteredData(event.target.value)
     }
-
-    //https://visualcampus.in/API/api/VCSync/PostListArea_Mas
-    //"proxy": "https://visualcampus.in",
 
     const getAreasMastersData = async () => {
         setInitialStatus(apiConstraint.loading)
@@ -300,70 +306,12 @@ function DefineVehiclesForNewStudents() {
             </div>
         </div >
     )
-    /*
-    <div className='define-vehicles-for-new-students-bg-container'>
-                <h1 className='define-vehicles-for-new-students-main-heading mb-0'>AREAS MASTER</h1>
-                <div className='container-fluid pt-2'>
-                    <div className='row'>
-                        <div className='col-xs-12 mb-3 define-vehicles-for-new-students-table-container'>
-                            <table className="define-vehicles-for-new-students-table">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>VEHICLE TYPE</th>
-                                        <th>VEHICLE NO</th>
-                                        <th>AREA CODE</th>
-                                        <th>AREA[STOP] NAME</th>
-                                        <th>KILOMETERS</th>
-                                        <th>FARE-RS</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {getFilteredData.map((eachItem, key) => (
-                                        <tr key={key}>
-                                            <td>{eachItem.id}</td>
-                                            <td>
-                                                <select className='td-select' defaultValue={eachItem.vehicleType}>
-                                                    <option>BUS-1</option>
-                                                    <option>BUS-2</option>
-                                                    <option>BUS-3</option>
-                                                    <option>BUS-4</option>
-                                                    <option>VAN-1</option>
-                                                    <option>VAN-2</option>
-                                                    <option>VAN-3</option>
-                                                    <option>VAN-4</option>
-                                                </select>
-                                            </td>
-                                            <td>{(eachItem.vehicleType === "BUS-1") && "TS08UF2268"} {(eachItem.vehicleType === "BUS-2") && "AP28TA5436"} {(eachItem.vehicleType === "BUS-3") && "AP28TA3447"} {(eachItem.vehicleType === "BUS-4") && "AP28TA3447"}</td>
-                                            <td>{eachItem.areaCode}</td>
-                                            <td>{eachItem.areaName}</td>
-                                            <td>{eachItem.kilometers}</td>
-                                            <td>{eachItem.totalFee}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                                <tfoot>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </div>
-                    <div className='define-vehicles-for-new-students-buttons-container pt-4 pb-4'>
-                        <div>
-                            <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button' onClick={handleAddPopUpShow}>ADD</button>
-                            <button className='define-bus-stops-of-new-students-buttons btn btn-secondary' type='submit'>EDIT</button>
-                            <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button'>DELETE</button>
-                            <button className='define-bus-stops-of-new-students-buttons btn btn-info' type='button'>HELP</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    */
 
     const contentContainer = () => (
         <>
             <div className='search-input-container'>
-                <input type='search' placeholder="Search here..." className='search-input' onKeyDown={searchForUserEnteredData} onChange={setUserEnteredDataToState} />
-                <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon'/>
+                <input type='search' placeholder="Search here..." className='search-input' onKeyDown={setFilterDataAfterEnteredByEnterKey} onChange={setUserEnteredDataToState} />
+                <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon' onClick={setFilterDataAfterEnteredBySearchIcon} />
             </div>
             {(getFilteredData.length) > 0 && (
                 <div className='define-vehicles-for-new-students-bg-container'>

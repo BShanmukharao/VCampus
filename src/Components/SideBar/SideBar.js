@@ -37,7 +37,7 @@ export const SideBar = () => {
         $('.menu > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
         $('.menu > ul > li > ul > li > ul > li > ul > li > ul > li > a .arrow').not($(this).find(".arrow")).removeClass("rotate");
         $(this).next("ul").slideToggle();
-        $(".menu ul ul").not($(this).next("ul")).slideUp(); 
+        $(".menu ul ul").not($(this).next("ul")).slideUp();
       });
     });
 
@@ -140,12 +140,12 @@ export const SideBar = () => {
       <div className='sidebar' id="side-id">
         <div className='head'>
           <div>
-            <Link to="/home" onClick={homeIcon} className='logout-router-link'>
+            <Link onClick={homeIcon} className='logout-router-link'>
               <img src="https://c8.alamy.com/comp/2E1AKBG/initial-circle-vc-letter-logo-creative-typography-vector-template-creative-letter-vc-logo-vector-2E1AKBG.jpg" alt='logo' className='sidebar-logo' />
             </Link>
           </div>
           <div className='user-details'>
-            <Link to="/home" onClick={homeIcon} className='logout-router-link'>
+            <Link onClick={homeIcon} className='logout-router-link'>
               <p className='title'>Visual Campus</p>
             </Link>
           </div>
