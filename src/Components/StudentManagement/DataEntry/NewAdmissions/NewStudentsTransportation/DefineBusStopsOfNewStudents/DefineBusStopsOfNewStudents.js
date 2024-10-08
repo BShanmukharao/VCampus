@@ -23,7 +23,6 @@ function DefineVehiclesForNewStudents() {
     const [getAreaName, setAreaName] = useState("")
     const [getKilometers, setKilometers] = useState(0)
     const [getFareFee, setFareFee] = useState(0)
-    const [getUserEnteredData, setUserEnteredData] = useState("")
 
     const handleAddPopUpClose = () => setshowAddPopUp(false);
     const handleAddPopUpShow = () => setshowAddPopUp(true);
@@ -37,18 +36,8 @@ function DefineVehiclesForNewStudents() {
         getAreasMastersData()
     }, [])
 
-    const setFilterDataAfterEnteredByEnterKey = (event) => {
-        if ((event.key === 'Enter')) {
-            searchForUserEnteredData();
-        }
-    }
-
-    const setFilterDataAfterEnteredBySearchIcon = () => {
-        searchForUserEnteredData();
-    }
-
-    const searchForUserEnteredData = () => {
-        const userEnteredData = getUserEnteredData
+    const setUserEnteredDataToState = (event) => {
+        const userEnteredData = event.target.value
         const filteredData = getSchoolData.filter(item =>
             item.id.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
             item.vehicleType.toString().toLowerCase().includes(userEnteredData.toLowerCase()) ||
@@ -60,14 +49,14 @@ function DefineVehiclesForNewStudents() {
         setFilteredData(filteredData)
     }
 
-    const setUserEnteredDataToState = (event) => {
-        setUserEnteredData(event.target.value)
-    }
-
     const getAreasMastersData = async () => {
         setInitialStatus(apiConstraint.loading)
+
+        //'/API/api/VCSync/PostListArea_Mas'
+        //"proxy": "https://visualcampus.in",
+
         try {
-            const Data = await fetch('/API/api/VCSync/PostListArea_Mas', {
+            const Data = await fetch('https://cors-anywhere.herokuapp.com/https://visualcampus.in/API/api/VCSync/PostListArea_Mas', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -246,10 +235,11 @@ function DefineVehiclesForNewStudents() {
             ]
 
             handleAddPopUpClose()
+            // API/api/VCSync/PostArea_Mas
 
             try {
                 setInitialStatus(apiConstraint.loading)
-                const addedData = await fetch('/API/api/VCSync/PostArea_Mas', {
+                const addedData = await fetch('https://cors-anywhere.herokuapp.com/https://visualcampus.in/API/api/VCSync/PostArea_Mas', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -310,8 +300,8 @@ function DefineVehiclesForNewStudents() {
     const contentContainer = () => (
         <>
             <div className='search-input-container'>
-                <input type='search' placeholder="Search here..." className='search-input' onKeyDown={setFilterDataAfterEnteredByEnterKey} onChange={setUserEnteredDataToState} />
-                <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon' onClick={setFilterDataAfterEnteredBySearchIcon} />
+                <input type='search' placeholder="Search here..." className='search-input' onChange={setUserEnteredDataToState} />
+                <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon' />
             </div>
             {(getFilteredData.length) > 0 && (
                 <div className='define-vehicles-for-new-students-bg-container'>
@@ -364,6 +354,7 @@ function DefineVehiclesForNewStudents() {
                             <div>
                                 <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button' onClick={handleAddPopUpShow}>ADD</button>
                                 <button className='define-bus-stops-of-new-students-buttons btn btn-secondary' type='submit'>EDIT</button>
+                                <button className='define-bus-stops-of-new-students-buttons btn btn-success' type='submit'>SAVE</button>
                                 <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button'>DELETE</button>
                                 <button className='define-bus-stops-of-new-students-buttons btn btn-info' type='button'>HELP</button>
                             </div>
