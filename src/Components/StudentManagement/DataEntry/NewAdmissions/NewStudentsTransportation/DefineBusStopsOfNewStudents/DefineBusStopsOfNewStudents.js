@@ -4,7 +4,7 @@ import { Modal } from 'react-bootstrap';
 import { ThreeDots, TailSpin/*,Puff, Rings, Oval, Bars, Circles, Header, Grid*/ } from 'react-loader-spinner';
 import './DefineBusStopsOfNewStudents.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleCheck, faCircleXmark, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 
 const apiConstraint = {
@@ -12,24 +12,30 @@ const apiConstraint = {
     success: 'SUCCESS',
     successAfterAdded: 'SUCCESSAFTERADDED',
     failureAfterAdded: 'FAILUREAFTERADDED',
+    successAfterDelete: 'SUCCESSAFTERDELETE',
+    failureAfterDelete: 'FAILUREAFTERDELETE',
     loading: 'LOADING',
     failure: 'FAILURE',
 }
 
 function DefineVehiclesForNewStudents() {
 
-    const [showAddPopUp, setshowAddPopUp] = useState(false)
-    const [getVehicleType, setVehicleType] = useState("BUS-1")
-    const [getAreaName, setAreaName] = useState("")
-    const [getKilometers, setKilometers] = useState(0)
-    const [getFareFee, setFareFee] = useState(0)
+    const [showAddPopUp, setshowAddPopUp] = useState(false);
+    const [showDeletePopUp, setshowDeletePopUp] = useState(false);
+    const [getVehicleType, setVehicleType] = useState("BUS-1");
+    const [getAreaName, setAreaName] = useState("");
+    const [getKilometers, setKilometers] = useState(0);
+    const [getFareFee, setFareFee] = useState(0);
 
     const handleAddPopUpClose = () => setshowAddPopUp(false);
+    const handleDeletePopUpClose = () => setshowDeletePopUp(false);
     const handleAddPopUpShow = () => setshowAddPopUp(true);
+    const handleDeletePopUpShow = () => setshowDeletePopUp(true);
 
 
-    const [getSchoolData, setSchoolData] = useState([])
-    const [getFilteredData, setFilteredData] = useState()
+    const [getSchoolData, setSchoolData] = useState([]);
+    const [getSelectedItemsList, setSelectedItemsList] = useState([]);
+    const [getFilteredData, setFilteredData] = useState();
     const [getInitialStatus, setInitialStatus] = useState(apiConstraint.initial);
 
     useEffect(() => {
@@ -56,7 +62,7 @@ function DefineVehiclesForNewStudents() {
         //"proxy": "https://visualcampus.in",
 
         try {
-            const Data = await fetch('https://cors-anywhere.herokuapp.com/https://visualcampus.in/API/api/VCSync/PostListArea_Mas', {
+            const Data = await fetch('/API/api/VCSync/PostListArea_Mas', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -235,11 +241,11 @@ function DefineVehiclesForNewStudents() {
             ]
 
             handleAddPopUpClose()
-            // API/api/VCSync/PostArea_Mas
+            // 'API/api/VCSync/PostArea_Mas'
 
             try {
                 setInitialStatus(apiConstraint.loading)
-                const addedData = await fetch('https://cors-anywhere.herokuapp.com/https://visualcampus.in/API/api/VCSync/PostArea_Mas', {
+                const addedData = await fetch('/API/api/VCSync/PostArea_Mas', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -297,11 +303,98 @@ function DefineVehiclesForNewStudents() {
         </div >
     )
 
+    const AfterDeleteItemSuccessfullyContainer = () => (
+        <div className="AfterAddedItemSuccessfullyContainer-container">
+            <div className='icon-with-span'>
+                <span className="afterAddingIcon">
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                </span>
+                <span className="afterAddingSpan">DELETED SUCCESSFULLY.</span>
+            </div>
+            <button className='define-bus-stops-of-new-students-buttons btn btn-primary mt-3' type='button' onClick={callNormalStatus}>OK</button>
+        </div >
+    )
+
+    const AfterDeleteItemFailureContainer = () => (
+        <div className="AfterAddedItemSuccessfullyContainer-container">
+            <div className='icon-with-span'>
+                <span className="afterAddingFailureIcon">
+                    <FontAwesomeIcon icon={faCircleXmark} />
+                </span>
+                <span className="afterAddingSpan">FAILED TO DELETE.</span>
+            </div>
+            <div>
+                <button className='define-bus-stops-of-new-students-buttons btn btn-primary mt-3' type='button' onClick={callNormalStatus}>OK</button>
+            </div>
+        </div >
+    )
+
+    const deleteRowOnTable = async () => {
+        const filteredList = getSchoolData.filter(item => !getSelectedItemsList.includes(item.id));
+        const convertData = filteredList.map((eachItem) => ({
+            "ID": eachItem.id,
+            "vehcl_code": eachItem.vehicleCode,
+            "vehcl_type": eachItem.vehicleType,
+            "area_code": eachItem.areaCode,
+            "area": eachItem.areaName,
+            "kilometers": eachItem.kilometers,
+            "fare": eachItem.fareRs,
+            "fare_1": eachItem.fareOne,
+            "fare_2": eachItem.fareTwo,
+            "fare_3": eachItem.fareThree,
+            "fare_4": eachItem.fareFour,
+            "fare_5": eachItem.fareFive,
+            "fare_6": eachItem.fareSix,
+            "fare_7": eachItem.fareSeven,
+            "fare_8": eachItem.fareEigth,
+            "fare_9": eachItem.fareNine,
+            "fare_10": eachItem.fareTen,
+            "fare_11": eachItem.fareEleven,
+            "fare_12": eachItem.fareTwelve,
+            "total_fee": eachItem.totalFee,
+            "uploaded": eachItem.isUploaded,
+            "updated_on": eachItem.updatedDate,
+            "Key": "ASCTEST",
+            "Action": "A"
+        }))
+
+        if ((getSchoolData.length > filteredList.length) || (filteredList.length === 0)) {
+            try {
+                setInitialStatus(apiConstraint.loading)
+                const addedData = await fetch('/API/api/VCSync/PostArea_Mas', {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(convertData)
+                })
+                if (addedData.ok === true) {
+                    setInitialStatus(apiConstraint.successAfterDelete)
+                } else {
+                    setInitialStatus(apiConstraint.failureAfterDelete)
+                }
+            } catch (e) {
+
+            }
+        }
+        else {
+            alert("Please select atleast one item..")
+        }
+    }
+
+    const seleteCheckedItems = (id) => {
+        const isExists = getSelectedItemsList.includes(id);
+        if (isExists) {
+            setSelectedItemsList((prevNumbers) => prevNumbers.filter(num => num !== id));
+        } else {
+            setSelectedItemsList((prevState) => [...prevState, id])
+        }
+    }
+
     const contentContainer = () => (
         <>
             <div className='search-input-container'>
                 <input type='search' placeholder="Search here..." className='search-input' onChange={setUserEnteredDataToState} />
-                <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon' />
             </div>
             {(getFilteredData.length) > 0 && (
                 <div className='define-vehicles-for-new-students-bg-container'>
@@ -312,7 +405,7 @@ function DefineVehiclesForNewStudents() {
                                 <table className="define-vehicles-for-new-students-table">
                                     <thead>
                                         <tr>
-                                            <th>ID</th>
+                                            <th>SELECT</th>
                                             <th>VEHICLE TYPE</th>
                                             <th>VEHICLE NO</th>
                                             <th>AREA CODE</th>
@@ -324,7 +417,7 @@ function DefineVehiclesForNewStudents() {
                                     <tbody>
                                         {getFilteredData.map((eachItem, key) => (
                                             <tr key={key}>
-                                                <td>{eachItem.id}</td>
+                                                <td><input type='checkbox' onClick={() => seleteCheckedItems(eachItem.id)} /></td>
                                                 <td>
                                                     <select className='td-select' defaultValue={eachItem.vehicleType}>
                                                         <option>BUS-1</option>
@@ -355,7 +448,7 @@ function DefineVehiclesForNewStudents() {
                                 <button className='define-bus-stops-of-new-students-buttons btn btn-primary' type='button' onClick={handleAddPopUpShow}>ADD</button>
                                 <button className='define-bus-stops-of-new-students-buttons btn btn-secondary' type='submit'>EDIT</button>
                                 <button className='define-bus-stops-of-new-students-buttons btn btn-success' type='submit'>SAVE</button>
-                                <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button'>DELETE</button>
+                                <button className='define-bus-stops-of-new-students-buttons btn btn-danger' type='button' onClick={deleteRowOnTable}>DELETE</button>
                                 <button className='define-bus-stops-of-new-students-buttons btn btn-info' type='button'>HELP</button>
                             </div>
                         </div>
@@ -383,14 +476,18 @@ function DefineVehiclesForNewStudents() {
         switch (getInitialStatus) {
             case apiConstraint.success:
                 return contentContainer()
-            case apiConstraint.successAfterAdded:
-                return AfterAddedItemSuccessfullyContainer()
-            case apiConstraint.failureAfterAdded:
-                return AfterAddedItemFailureContainer()
             case apiConstraint.loading:
                 return loaderContainer()
             case apiConstraint.failure:
                 return failureContainer()
+            case apiConstraint.successAfterAdded:
+                return AfterAddedItemSuccessfullyContainer()
+            case apiConstraint.failureAfterAdded:
+                return AfterAddedItemFailureContainer()
+            case apiConstraint.successAfterDelete:
+                return AfterDeleteItemSuccessfullyContainer()
+            case apiConstraint.failureAfterDelete:
+                return AfterDeleteItemFailureContainer()
             default:
                 return null
         }
